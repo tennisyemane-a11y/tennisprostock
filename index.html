@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ============ SEO ============ -->
+<title>Yemane Tekeste | Private Tennis Coach Toronto · Elite Performance Coaching</title>
+<meta name="description" content="Private tennis coaching in Toronto with Coach Yemane Tekeste. Elite performance development, video analysis, junior programs and match strategy — a private-club experience. Book on WhatsApp or request a free assessment." />
+<meta name="keywords" content="Tennis Lessons Toronto, Private Tennis Coach Toronto, Elite Tennis Coaching Toronto, Junior Tennis Toronto, Tennis Assessment Toronto, performance tennis coaching" />
+<meta name="author" content="Yemane Tekeste — Private Tennis Coaching" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://tennisprostock.com/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Yemane Tekeste | Private Tennis Coach Toronto" />
+<meta property="og:description" content="Refined coaching. Elite performance. Private tennis development in Toronto with Coach Yemane Tekeste." />
+<meta property="og:locale" content="en_CA" />
+<meta property="og:url" content="https://tennisprostock.com/" />
+
+<link rel="icon" type="image/svg+xml" href="logo-icon.svg" />
+
+<!-- ============ FONTS ============ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- ============ STRUCTURED DATA (SEO) ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsActivityLocation",
+  "name": "Yemane Tekeste — Private Tennis Coaching",
+  "description": "Private and elite-performance tennis coaching in Toronto with Coach Yemane Tekeste.",
+  "areaServed": "Toronto, Ontario, Canada",
+  "address": { "@type": "PostalAddress", "addressLocality": "Toronto", "addressRegion": "ON", "addressCountry": "CA" },
+  "sport": "Tennis",
+  "founder": "Yemane Tekeste",
+  "sameAs": ["https://instagram.com/protenniswyemane"]
+}
+</script>
+
+<style>
+/* ============================================================
+   PROTENNIS WYEMANE — Design tokens
+   Palette: Forest deep / Matte black / Champagne gold / Ivory
+   Display: Cormorant Garamond  |  Body & utility: Inter
+   Signature: the gold "serve arc" — recurs as divider, hero motion, logo trajectory
+   ============================================================ */
+:root{
+  --black:#0b0b0a;
+  --forest-deep:#0d2019;
+  --forest:#143027;
+  --forest-mid:#1d4536;
+  --gold:#c9a86a;
+  --gold-bright:#e3cd9a;
+  --ivory:#f4efe4;
+  --ivory-dim:#cfc9ba;
+  --line:rgba(201,168,106,.22);
+
+  --serif:"Cormorant Garamond", Georgia, serif;
+  --sans:"Inter", system-ui, -apple-system, sans-serif;
+
+  --ease:cubic-bezier(.16,.84,.44,1);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);
+  background:var(--forest-deep);
+  color:var(--ivory);
+  line-height:1.6;
+  font-weight:300;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.05;letter-spacing:.005em}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+section{position:relative}
+
+.eyebrow{
+  font-family:var(--sans);
+  font-size:.72rem;
+  font-weight:500;
+  letter-spacing:.42em;
+  text-transform:uppercase;
+  color:var(--gold);
+}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+.center{text-align:center}
+
+/* Signature gold serve-arc divider */
+.arc-divider{display:block;width:100%;height:54px;opacity:.6}
+.arc-divider path{fill:none;stroke:var(--gold);stroke-width:1;opacity:.5}
+.arc-divider circle{fill:var(--gold)}
+
+/* Buttons */
+.btn{
+  display:inline-flex;align-items:center;gap:.6rem;
+  font-family:var(--sans);font-size:.8rem;font-weight:500;
+  letter-spacing:.16em;text-transform:uppercase;
+  padding:1.05rem 2.1rem;border:1px solid var(--gold);
+  border-radius:1px;cursor:pointer;transition:all .5s var(--ease);
+  background:transparent;color:var(--ivory);
+}
+.btn-gold{background:var(--gold);color:var(--black);border-color:var(--gold)}
+.btn-gold:hover{background:var(--gold-bright);border-color:var(--gold-bright);transform:translateY(-2px)}
+.btn-ghost:hover{background:rgba(201,168,106,.1);transform:translateY(-2px)}
+.btn svg{width:16px;height:16px}
+
+/* ============ NAV ============ */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1.4rem 32px;transition:all .5s var(--ease);
+}
+nav.scrolled{
+  background:rgba(11,11,10,.82);backdrop-filter:blur(14px);
+  padding:.85rem 32px;border-bottom:1px solid var(--line);
+}
+.nav-logo{display:flex;align-items:center;gap:.7rem;font-family:var(--serif);
+  font-size:1.32rem;letter-spacing:.04em;color:var(--ivory)}
+.nav-logo .mark{width:34px;height:34px}
+.nav-logo b{font-weight:500}
+.nav-logo .sub{color:var(--gold);font-style:italic;font-weight:400}
+.nav-links{display:flex;gap:2.3rem;align-items:center}
+.nav-links a{font-family:var(--sans);font-size:.74rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--ivory-dim);transition:color .3s}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{padding:.7rem 1.4rem !important;font-size:.7rem !important}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:6px}
+.burger span{width:26px;height:1.5px;background:var(--ivory);transition:.3s}
+
+/* ============ HERO ============ */
+.hero{height:100vh;min-height:640px;display:flex;align-items:center;
+  justify-content:center;text-align:center;overflow:hidden;position:relative}
+.hero-bg{position:absolute;inset:0;z-index:0}
+/* Cinematic layered treatment (works standalone; drop a <video> in for footage — see note in HTML) */
+.hero-bg video{width:100%;height:100%;object-fit:cover}
+.hero-grad{position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse at 30% 0%, rgba(29,69,54,.55), transparent 60%),
+    radial-gradient(ellipse at 80% 100%, rgba(13,32,25,.9), transparent 55%),
+    linear-gradient(180deg, #0a1813 0%, #0d2019 45%, #081410 100%);
+}
+.hero-grain{position:absolute;inset:0;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,10,.35),rgba(11,11,10,.55))}
+/* animated serve arc behind headline */
+.hero-arc{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:min(1100px,120vw);height:auto;z-index:1;opacity:.5}
+.hero-arc path{fill:none;stroke:var(--gold);stroke-width:1;
+  stroke-dasharray:1600;stroke-dashoffset:1600;animation:draw 3.4s var(--ease) .5s forwards}
+.hero-arc circle{fill:var(--gold);opacity:0;animation:ballin 1s ease 3.4s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes ballin{to{opacity:1}}
+
+.hero-content{position:relative;z-index:2;padding:0 28px;max-width:920px}
+.hero .eyebrow{margin-bottom:1.8rem;opacity:0;animation:rise 1s var(--ease) .3s forwards}
+.hero h1{font-size:clamp(3rem,9vw,7rem);letter-spacing:.01em;margin-bottom:1.6rem}
+.hero h1 .l1,.hero h1 .l2{display:block;opacity:0;transform:translateY(30px);
+  animation:rise 1.1s var(--ease) forwards}
+.hero h1 .l1{animation-delay:.6s}
+.hero h1 .l2{color:var(--gold);font-style:italic;animation-delay:.85s}
+.hero .sub{font-size:.85rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--ivory-dim);margin-bottom:2.8rem;opacity:0;animation:rise 1s var(--ease) 1.2s forwards}
+.hero-ctas{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;
+  opacity:0;animation:rise 1s var(--ease) 1.45s forwards}
+@keyframes rise{to{opacity:1;transform:translateY(0)}}
+.scroll-hint{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);
+  z-index:2;font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--ivory-dim);opacity:0;animation:rise 1s ease 2s forwards}
+.scroll-hint::after{content:"";display:block;width:1px;height:38px;
+  background:linear-gradient(var(--gold),transparent);margin:.6rem auto 0;
+  animation:pulse 2s ease infinite}
+@keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+
+/* ============ SECTION SHELL ============ */
+.section{padding:7rem 0}
+.section-head{max-width:720px;margin:0 auto 4rem;text-align:center}
+.section-head .eyebrow{margin-bottom:1.2rem;display:block}
+.section-head h2{font-size:clamp(2.4rem,5vw,3.8rem);margin-bottom:1.2rem}
+.section-head p{color:var(--ivory-dim);font-size:1.05rem}
+
+/* reveal on scroll */
+.reveal{opacity:0;transform:translateY(34px);transition:all 1s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* ============ ABOUT ============ */
+.about{background:linear-gradient(180deg,var(--forest-deep),var(--black))}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.about-portrait{aspect-ratio:4/5;border:1px solid var(--line);position:relative;
+  background:linear-gradient(135deg,var(--forest),var(--black));overflow:hidden}
+.about-portrait .ph{position:absolute;inset:0;display:flex;align-items:center;
+  justify-content:center;flex-direction:column;gap:1rem;color:var(--ivory-dim)}
+.about-portrait .ph .mono{width:120px;opacity:.5}
+.about-portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.about-text .eyebrow{display:block;margin-bottom:1.4rem}
+.about-text h2{font-size:clamp(2.2rem,4.5vw,3.4rem);margin-bottom:1.8rem}
+.about-text p{color:var(--ivory-dim);margin-bottom:1.3rem;font-size:1.05rem}
+.about-text p .lead{color:var(--ivory);font-style:italic;font-family:var(--serif);font-size:1.35rem}
+.pillars{display:flex;gap:2.5rem;margin-top:2.5rem;flex-wrap:wrap}
+.pillar .n{font-family:var(--serif);font-size:2.6rem;color:var(--gold)}
+.pillar .t{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ivory-dim)}
+
+/* ============ SERVICES ============ */
+.services{background:var(--black)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.svc{border:1px solid var(--line);padding:2.6rem 2rem;background:rgba(20,48,39,.25);
+  transition:all .55s var(--ease);position:relative;overflow:hidden}
+.svc::before{content:"";position:absolute;top:0;left:0;width:100%;height:2px;
+  background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .55s var(--ease)}
+.svc:hover{background:rgba(29,69,54,.4);transform:translateY(-6px)}
+.svc:hover::before{transform:scaleX(1)}
+.svc .num{font-family:var(--sans);font-size:.7rem;letter-spacing:.2em;color:var(--gold);opacity:.7}
+.svc h3{font-size:1.7rem;margin:1.1rem 0 .8rem}
+.svc p{color:var(--ivory-dim);font-size:.95rem;margin-bottom:1.4rem}
+.svc .more{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+
+/* ============ ASSESSMENT FUNNEL ============ */
+.assess{background:linear-gradient(180deg,var(--black),var(--forest-deep))}
+.assess-card{max-width:680px;margin:0 auto;border:1px solid var(--line);
+  background:rgba(11,11,10,.5);padding:3.2rem;backdrop-filter:blur(6px)}
+.progress{display:flex;gap:.5rem;margin-bottom:2.4rem}
+.progress span{flex:1;height:2px;background:rgba(201,168,106,.2)}
+.progress span.on{background:var(--gold)}
+.step{display:none;animation:fade .5s var(--ease)}
+.step.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.step h3{font-size:1.9rem;margin-bottom:.4rem}
+.step .hint{color:var(--ivory-dim);font-size:.92rem;margin-bottom:1.8rem}
+.field{margin-bottom:1.3rem}
+.field label{display:block;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:.6rem}
+.field input,.field select,.field textarea{width:100%;background:rgba(20,48,39,.4);
+  border:1px solid var(--line);color:var(--ivory);padding:.95rem 1rem;
+  font-family:var(--sans);font-size:.95rem;border-radius:1px;transition:border .3s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold)}
+.field select{appearance:none;cursor:pointer}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
+.opt{border:1px solid var(--line);padding:.95rem 1rem;cursor:pointer;text-align:center;
+  font-size:.85rem;letter-spacing:.05em;transition:all .3s;border-radius:1px}
+.opt:hover{border-color:var(--gold)}
+.opt.sel{background:var(--gold);color:var(--black);border-color:var(--gold)}
+.step-nav{display:flex;justify-content:space-between;margin-top:2rem;gap:1rem}
+.step-nav .btn{flex:0}
+.link-back{background:none;border:none;color:var(--ivory-dim);cursor:pointer;
+  font-family:var(--sans);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase}
+.link-back:hover{color:var(--gold)}
+.result{text-align:center}
+.result .badge{display:inline-block;font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--gold);border:1px solid var(--gold);padding:.5rem 1.2rem;margin-bottom:1.6rem}
+.result h3{font-size:2.4rem;margin-bottom:.8rem}
+.result .rec{font-family:var(--serif);font-style:italic;font-size:1.8rem;color:var(--gold);margin-bottom:1.2rem}
+.result p{color:var(--ivory-dim);margin-bottom:2rem}
+
+/* ============ TESTIMONIALS ============ */
+.testi{background:var(--forest-deep)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.quote{border:1px solid var(--line);padding:2.6rem 2rem;background:rgba(20,48,39,.2)}
+.quote .stars{color:var(--gold);letter-spacing:.2em;margin-bottom:1.2rem;font-size:.9rem}
+.quote p{font-family:var(--serif);font-style:italic;font-size:1.3rem;line-height:1.45;margin-bottom:1.6rem}
+.quote .who{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ivory-dim)}
+.quote .who b{color:var(--gold);font-weight:500}
+
+/* ============ INSTAGRAM ============ */
+.insta{background:linear-gradient(180deg,var(--forest-deep),var(--black))}
+.ig-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.ig-tile{aspect-ratio:1;border:1px solid var(--line);position:relative;overflow:hidden;
+  background:linear-gradient(135deg,var(--forest),var(--black));display:flex;
+  align-items:center;justify-content:center;transition:all .5s var(--ease)}
+.ig-tile:hover{transform:scale(1.02);border-color:var(--gold)}
+.ig-tile svg{width:40px;height:40px;opacity:.35;transition:opacity .4s}
+.ig-tile:hover svg{opacity:.7}
+.ig-tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* ============ CONTACT ============ */
+.contact{background:var(--black)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem}
+.contact-block h3{font-size:1.5rem;margin-bottom:1.4rem}
+.contact-row{display:flex;align-items:center;gap:1rem;padding:1.2rem 0;border-bottom:1px solid var(--line)}
+.contact-row svg{width:22px;height:22px;color:var(--gold);flex-shrink:0}
+.contact-row .lbl{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ivory-dim)}
+.contact-row .val{font-size:1.05rem}
+.pay-card{border:1px solid var(--gold);padding:2.4rem;background:rgba(201,168,106,.05)}
+.pay-card .eyebrow{display:block;margin-bottom:1.4rem}
+.pay-card .etr{font-family:var(--serif);font-size:1.7rem;color:var(--gold);margin-bottom:.4rem;word-break:break-all}
+.pay-card .small{font-size:.85rem;color:var(--ivory-dim);margin-bottom:1.6rem}
+.pay-card .accepted{display:flex;align-items:center;gap:.7rem;font-size:.92rem}
+.pay-card .accepted svg{width:18px;height:18px;color:var(--gold)}
+
+/* ============ FOOTER ============ */
+footer{background:var(--forest-deep);border-top:1px solid var(--line);padding:4rem 0 2.5rem}
+.foot-grid{display:flex;justify-content:space-between;align-items:flex-start;gap:2rem;flex-wrap:wrap}
+.foot-logo{display:flex;align-items:center;gap:.8rem;font-family:var(--serif);font-size:1.5rem}
+.foot-logo .mark{width:40px}
+.foot-tag{color:var(--ivory-dim);font-size:.9rem;margin-top:1rem;max-width:280px;font-style:italic;font-family:var(--serif)}
+.foot-links{display:flex;gap:2.4rem;flex-wrap:wrap}
+.foot-links a{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ivory-dim);transition:color .3s}
+.foot-links a:hover{color:var(--gold)}
+.foot-bottom{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--line);
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;
+  font-size:.72rem;letter-spacing:.1em;color:var(--ivory-dim)}
+
+/* ============ FLOATING WHATSAPP + CHAT ============ */
+.float{position:fixed;right:22px;bottom:22px;z-index:200;display:flex;flex-direction:column;gap:14px;align-items:flex-end}
+.fab{width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  cursor:pointer;border:none;box-shadow:0 8px 30px rgba(0,0,0,.4);transition:transform .3s}
+.fab:hover{transform:scale(1.08)}
+.fab-wa{background:#25d366}
+.fab-chat{background:var(--gold)}
+.fab svg{width:28px;height:28px}
+
+/* Chat panel */
+.chat{position:fixed;right:22px;bottom:22px;z-index:210;width:min(380px,calc(100vw - 32px));
+  height:min(560px,80vh);background:var(--forest-deep);border:1px solid var(--gold);
+  border-radius:6px;display:none;flex-direction:column;overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.chat.open{display:flex;animation:fade .35s var(--ease)}
+.chat-head{background:var(--black);padding:1.1rem 1.3rem;display:flex;align-items:center;
+  justify-content:space-between;border-bottom:1px solid var(--line)}
+.chat-head .who{display:flex;align-items:center;gap:.7rem}
+.chat-head .av{width:36px;height:36px;border-radius:50%;background:var(--gold);
+  display:flex;align-items:center;justify-content:center}
+.chat-head .av svg{width:20px;height:20px;color:var(--black)}
+.chat-head .nm{font-family:var(--serif);font-size:1.05rem}
+.chat-head .st{font-size:.62rem;letter-spacing:.1em;color:#25d366;text-transform:uppercase}
+.chat-x{background:none;border:none;color:var(--ivory-dim);cursor:pointer;font-size:1.4rem}
+.chat-body{flex:1;overflow-y:auto;padding:1.2rem;display:flex;flex-direction:column;gap:.9rem}
+.msg{max-width:84%;padding:.8rem 1rem;border-radius:10px;font-size:.9rem;line-height:1.5}
+.msg.bot{background:rgba(20,48,39,.6);border:1px solid var(--line);align-self:flex-start;border-bottom-left-radius:2px}
+.msg.user{background:var(--gold);color:var(--black);align-self:flex-end;border-bottom-right-radius:2px}
+.msg.bot a{color:var(--gold);text-decoration:underline}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;padding:0 1.2rem .8rem}
+.chip{font-size:.72rem;letter-spacing:.04em;border:1px solid var(--line);color:var(--ivory-dim);
+  padding:.5rem .8rem;border-radius:20px;cursor:pointer;transition:all .3s;background:none}
+.chip:hover{border-color:var(--gold);color:var(--gold)}
+.chat-input{display:flex;gap:.6rem;padding:1rem;border-top:1px solid var(--line);background:var(--black)}
+.chat-input input{flex:1;background:rgba(20,48,39,.5);border:1px solid var(--line);
+  color:var(--ivory);padding:.8rem;border-radius:4px;font-family:var(--sans);font-size:.9rem}
+.chat-input input:focus{outline:none;border-color:var(--gold)}
+.chat-input button{background:var(--gold);border:none;color:var(--black);width:44px;border-radius:4px;cursor:pointer}
+.chat-input button svg{width:20px;height:20px;margin:auto}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:900px){
+  .nav-links{position:fixed;inset:0;background:rgba(11,11,10,.97);flex-direction:column;
+    justify-content:center;gap:2rem;transform:translateX(100%);transition:transform .5s var(--ease)}
+  .nav-links.open{transform:none}
+  .nav-links a{font-size:1rem}
+  .burger{display:flex;z-index:101}
+  .about-grid,.contact-grid{grid-template-columns:1fr;gap:2.5rem}
+  .svc-grid,.testi-grid{grid-template-columns:1fr}
+  .ig-grid{grid-template-columns:repeat(2,1fr)}
+  .section{padding:5rem 0}
+  .wrap{padding:0 22px}
+  .assess-card{padding:2rem 1.5rem}
+  .opts{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms !important;transition-duration:.01ms !important}
+  .hero-arc path{stroke-dashoffset:0}
+  .hero-arc circle,.hero .eyebrow,.hero h1 .l1,.hero h1 .l2,.hero .sub,.hero-ctas,.scroll-hint{opacity:1;transform:none}
+}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav id="nav">
+  <a href="#top" class="nav-logo">
+    <svg class="mark" viewBox="0 0 240 240" aria-hidden="true">
+      <circle cx="120" cy="120" r="112" fill="none" stroke="#c9a86a" stroke-width="4"/>
+      <g fill="#c9a86a" stroke="#c9a86a" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M98 86 Q112 80 122 86 L120 128 Q110 134 102 128 Z" stroke-width="2"/>
+        <circle cx="105" cy="69" r="12.5" stroke-width="1"/>
+        <path d="M92 64 Q100 56 112 58 L110 64 Z" stroke-width="1"/>
+        <path d="M119 88 L141 73 L151 51" fill="none" stroke-width="12"/>
+        <ellipse cx="163" cy="39" rx="11.5" ry="14.5" transform="rotate(26 163 39)" fill="none" stroke-width="5.5"/>
+        <path d="M151 51 L157 47" fill="none" stroke-width="5.5"/>
+        <circle cx="186" cy="34" r="6.5" stroke="none"/>
+        <path d="M100 90 L88 102 L99 116" fill="none" stroke-width="11"/>
+        <path d="M118 126 L150 119 L181 110" fill="none" stroke-width="17"/>
+        <path d="M181 110 L195 105" fill="none" stroke-width="11"/>
+        <path d="M104 130 L111 167 L99 198" fill="none" stroke-width="17"/>
+        <path d="M99 198 L85 201" fill="none" stroke-width="11"/>
+      </g>
+    </svg>
+    <span><b>YEMANE</b> <span class="sub">Tekeste</span></span>
+  </a>
+  <div class="nav-links" id="navlinks">
+    <a href="#about">Coach</a>
+    <a href="#services">Programs</a>
+    <a href="#assessment">Assessment</a>
+    <a href="#testimonials">Members</a>
+    <a href="#contact">Contact</a>
+    <a href="#" class="btn btn-gold nav-cta" id="navBook">Book on WhatsApp</a>
+  </div>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="hero-bg">
+    <!-- ▼▼ DROP YOUR FOOTAGE HERE ▼▼  Replace the gradient block by uncommenting & adding your file:
+    <video autoplay muted loop playsinline poster="hero-poster.jpg">
+      <source src="hero.mp4" type="video/mp4">
+    </video>
+    ▲▲ Until then, the cinematic gradient below stands on its own. ▲▲ -->
+    <div class="hero-grad"></div>
+    <div class="hero-grain"></div>
+    <div class="hero-overlay"></div>
+  </div>
+
+  <svg class="hero-arc" viewBox="0 0 1100 400" aria-hidden="true">
+    <path d="M40 360 Q550 -60 1060 360"/>
+    <circle cx="1060" cy="360" r="6"/>
+  </svg>
+
+  <div class="hero-content">
+    <span class="eyebrow">Private Coaching · Toronto, Ontario</span>
+    <h1><span class="l1">Refined Coaching.</span><span class="l2">Elite Performance.</span></h1>
+    <p class="sub">Private Coaching · Performance Analysis · Elite Development · Toronto</p>
+    <div class="hero-ctas">
+      <a href="#" class="btn btn-gold" id="heroBook">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2s-.8.9-1 1.1c-.2.2-.4.2-.7.1-1.7-.9-2.9-1.6-4-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5C9.7 9 9.1 7.5 8.8 6.9c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.4 4.7 2 .9 2.8.9 3.8.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2"/></svg>
+        Book on WhatsApp
+      </a>
+      <a href="#assessment" class="btn btn-ghost">Get a Free Assessment</a>
+    </div>
+  </div>
+  <div class="scroll-hint">Scroll</div>
+</header>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-portrait reveal">
+        <!-- Replace with a portrait of Yemane: <img src="coach-yemane.jpg" alt="Coach Yemane Tekeste"> -->
+        <div class="ph">
+          <svg class="mono" viewBox="0 0 100 60" fill="none" stroke="#c9a86a" stroke-width="1.5"><text x="50" y="42" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="40" fill="#c9a86a" stroke="none">PW</text></svg>
+          <span style="font-size:.66rem;letter-spacing:.2em;text-transform:uppercase">Portrait · Coach Yemane</span>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <span class="eyebrow">The Coach</span>
+        <h2>Yemane Tekeste</h2>
+        <p><span class="lead">A modern performance coach delivering elite development through a private-club experience.</span></p>
+        <p>Trained in the systems that shape today's tour-level athletes, Yemane built his coaching practice around a single idea: that serious players deserve coaching that is as refined as it is relentless. Every session blends explosive, results-driven athleticism with the quiet discipline of a private club.</p>
+        <p>The philosophy is simple — measure everything, waste nothing. From footwork mechanics to match psychology, development is structured, tracked, and personal. No two players follow the same path, and no detail is left to chance.</p>
+        <div class="pillars">
+          <div class="pillar"><div class="n">1:1</div><div class="t">Private<br>Attention</div></div>
+          <div class="pillar"><div class="n">ATP</div><div class="t">Modern<br>Systems</div></div>
+          <div class="pillar"><div class="n">100%</div><div class="t">Results<br>Focused</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- arc divider -->
+<svg class="arc-divider" viewBox="0 0 1200 54" preserveAspectRatio="none"><path d="M0 50 Q600 -20 1200 50"/><circle cx="1200" cy="50" r="3"/></svg>
+
+<!-- ============ SERVICES ============ -->
+<section class="section services" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">The Programs</span>
+      <h2>Coaching, refined to your level</h2>
+      <p>Six pathways, each built around measurement and individual development. Pricing is tailored after your assessment.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc reveal"><div class="num">01</div><h3>Private Lessons</h3><p>One-on-one sessions engineered around your technique, fitness, and goals — the core of elite development.</p><a href="#assessment" class="more">Begin →</a></div>
+      <div class="svc reveal"><div class="num">02</div><h3>Group Lessons</h3><p>Small-group training that sharpens competitive instincts while keeping the attention high and the standard higher.</p><a href="#assessment" class="more">Begin →</a></div>
+      <div class="svc reveal"><div class="num">03</div><h3>Video Analysis</h3><p>Frame-by-frame breakdown of your stroke and movement, benchmarked against tour-level mechanics.</p><a href="#assessment" class="more">Begin →</a></div>
+      <div class="svc reveal"><div class="num">04</div><h3>Performance Assessment</h3><p>A full evaluation of technical, physical, and tactical ability — the foundation of your development plan.</p><a href="#assessment" class="more">Begin →</a></div>
+      <div class="svc reveal"><div class="num">05</div><h3>Junior Development</h3><p>Structured long-term pathways for young athletes, building fundamentals, athleticism, and a competitor's mindset.</p><a href="#assessment" class="more">Begin →</a></div>
+      <div class="svc reveal"><div class="num">06</div><h3>Match Strategy</h3><p>Tactical sessions that turn ability into wins — patterns, point construction, and the psychology of competition.</p><a href="#assessment" class="more">Begin →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ASSESSMENT FUNNEL ============ -->
+<section class="section assess" id="assessment">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Free Assessment</span>
+      <h2>Find your pathway</h2>
+      <p>Answer a few questions and receive a personal coaching recommendation — then book directly on WhatsApp.</p>
+    </div>
+
+    <div class="assess-card reveal">
+      <div class="progress" id="progress">
+        <span class="on"></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <!-- Step 1 -->
+      <div class="step active" data-step="0">
+        <h3>Let's start with your name</h3>
+        <p class="hint">So Coach Yemane knows who he's building a plan for.</p>
+        <div class="field"><label>Full name</label><input type="text" id="f_name" placeholder="Your name" autocomplete="name"></div>
+        <div class="step-nav"><span></span><button class="btn btn-gold" data-next>Continue</button></div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step" data-step="1">
+        <h3>Who is this for?</h3>
+        <p class="hint">Age helps shape the right program.</p>
+        <div class="field"><label>Player age group</label>
+          <div class="opts" data-field="age">
+            <div class="opt" data-val="Junior (Under 12)">Under 12</div>
+            <div class="opt" data-val="Junior (12–17)">12 – 17</div>
+            <div class="opt" data-val="Adult (18–39)">18 – 39</div>
+            <div class="opt" data-val="Adult (40+)">40 +</div>
+          </div>
+        </div>
+        <div class="step-nav"><button class="link-back" data-back>← Back</button><button class="btn btn-gold" data-next>Continue</button></div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step" data-step="2">
+        <h3>Your experience</h3>
+        <p class="hint">Be honest — it only helps us place you well.</p>
+        <div class="field"><label>How long have you played?</label>
+          <div class="opts" data-field="experience">
+            <div class="opt" data-val="New to tennis">New to tennis</div>
+            <div class="opt" data-val="Under 2 years">Under 2 years</div>
+            <div class="opt" data-val="2–5 years">2 – 5 years</div>
+            <div class="opt" data-val="5+ years / competitive">5+ yrs / competitive</div>
+          </div>
+        </div>
+        <div class="step-nav"><button class="link-back" data-back>← Back</button><button class="btn btn-gold" data-next>Continue</button></div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="step" data-step="3">
+        <h3>Your skill level</h3>
+        <p class="hint">Where would you place yourself today?</p>
+        <div class="field"><label>Current level</label>
+          <div class="opts" data-field="skill">
+            <div class="opt" data-val="Beginner">Beginner</div>
+            <div class="opt" data-val="Intermediate">Intermediate</div>
+            <div class="opt" data-val="Advanced">Advanced</div>
+            <div class="opt" data-val="Competitive / Tournament">Competitive</div>
+          </div>
+        </div>
+        <div class="step-nav"><button class="link-back" data-back>← Back</button><button class="btn btn-gold" data-next>Continue</button></div>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="step" data-step="4">
+        <h3>Your goal</h3>
+        <p class="hint">What does success look like for you?</p>
+        <div class="field"><label>Primary goal</label>
+          <div class="opts" data-field="goal">
+            <div class="opt" data-val="Learn the fundamentals">Learn fundamentals</div>
+            <div class="opt" data-val="Improve technique & fitness">Technique & fitness</div>
+            <div class="opt" data-val="Compete & win matches">Compete & win</div>
+            <div class="opt" data-val="Junior long-term development">Junior pathway</div>
+          </div>
+        </div>
+        <div class="step-nav"><button class="link-back" data-back>← Back</button><button class="btn btn-gold" data-next>Continue</button></div>
+      </div>
+
+      <!-- Step 6 -->
+      <div class="step" data-step="5">
+        <h3>Your availability</h3>
+        <p class="hint">When do you prefer to train?</p>
+        <div class="field"><label>Preferred times</label>
+          <div class="opts" data-field="availability">
+            <div class="opt" data-val="Weekday mornings">Weekday AM</div>
+            <div class="opt" data-val="Weekday evenings">Weekday PM</div>
+            <div class="opt" data-val="Weekends">Weekends</div>
+            <div class="opt" data-val="Flexible">Flexible</div>
+          </div>
+        </div>
+        <div class="step-nav"><button class="link-back" data-back>← Back</button><button class="btn btn-gold" data-result>See my recommendation</button></div>
+      </div>
+
+      <!-- Result -->
+      <div class="step result" data-step="6">
+        <div class="badge">Your Recommendation</div>
+        <h3 id="r_hi">Thank you</h3>
+        <div class="rec" id="r_rec">Private Lessons</div>
+        <p id="r_text">Based on your answers, here's the pathway Coach Yemane recommends.</p>
+        <div class="hero-ctas" style="justify-content:center">
+          <a href="#" class="btn btn-gold" id="r_wa">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2s-.8.9-1 1.1c-.2.2-.4.2-.7.1-1.7-.9-2.9-1.6-4-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5C9.7 9 9.1 7.5 8.8 6.9c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.4 4.7 2 .9 2.8.9 3.8.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2"/></svg>
+          Send to WhatsApp</a>
+          <button class="btn btn-ghost" data-restart>Start over</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- arc divider -->
+<svg class="arc-divider" viewBox="0 0 1200 54" preserveAspectRatio="none"><path d="M0 50 Q600 -20 1200 50"/><circle cx="1200" cy="50" r="3"/></svg>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section testi" id="testimonials">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">In Their Words</span>
+      <h2>The members' experience</h2>
+      <p>A standard of coaching you feel from the first session.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="quote reveal"><div class="stars">★★★★★</div><p>"The most structured coaching I've had. Every session has a purpose and I can see the progress on video."</p><div class="who"><b>A. Mensah</b> · Competitive Adult</div></div>
+      <div class="quote reveal"><div class="stars">★★★★★</div><p>"My daughter went from recreational to ranked in a season. Yemane treats development seriously."</p><div class="who"><b>R. Patel</b> · Junior Parent</div></div>
+      <div class="quote reveal"><div class="stars">★★★★★</div><p>"Professional, precise, and genuinely invested. It feels like a private club, not a lesson."</p><div class="who"><b>D. Romano</b> · Intermediate Adult</div></div>
+    </div>
+    <p class="center" style="margin-top:2rem;font-size:.78rem;letter-spacing:.1em;color:var(--ivory-dim);opacity:.6">— Sample testimonials shown. Replace with your real client reviews. —</p>
+  </div>
+</section>
+
+<!-- ============ INSTAGRAM ============ -->
+<section class="section insta" id="instagram">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">On the Court</span>
+      <h2>@protenniswyemane</h2>
+      <p>Training clips, match footage, and coaching from inside the program.</p>
+    </div>
+    <div class="ig-grid">
+      <a class="ig-tile reveal" href="https://instagram.com/protenniswyemane" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="#c9a86a" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#c9a86a"/></svg></a>
+      <a class="ig-tile reveal" href="https://instagram.com/protenniswyemane" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="#c9a86a" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#c9a86a"/></svg></a>
+      <a class="ig-tile reveal" href="https://instagram.com/protenniswyemane" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="#c9a86a" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#c9a86a"/></svg></a>
+      <a class="ig-tile reveal" href="https://instagram.com/protenniswyemane" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="#c9a86a" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#c9a86a"/></svg></a>
+    </div>
+    <div class="center" style="margin-top:2.5rem">
+      <a href="https://instagram.com/protenniswyemane" target="_blank" rel="noopener" class="btn btn-ghost">Follow @protenniswyemane</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Begin</span>
+      <h2>Reserve your court time</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-block reveal">
+        <h3>Get in touch</h3>
+        <a class="contact-row" id="waContact" href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2s-.8.9-1 1.1c-.2.2-.4.2-.7.1-1.7-.9-2.9-1.6-4-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5C9.7 9 9.1 7.5 8.8 6.9c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.4 4.7 2 .9 2.8.9 3.8.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2"/></svg>
+          <span><span class="lbl">WhatsApp Booking</span><br><span class="val">Message Coach Yemane</span></span>
+        </a>
+        <a class="contact-row" href="https://instagram.com/protenniswyemane" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          <span><span class="lbl">Instagram</span><br><span class="val">@protenniswyemane</span></span>
+        </a>
+        <a class="contact-row" href="mailto:tennisyemane@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7L22 6"/></svg>
+          <span><span class="lbl">Email</span><br><span class="val">tennisyemane@gmail.com</span></span>
+        </a>
+        <div class="contact-row" style="border:none">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-5.2-7-11a7 7 0 0114 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <span><span class="lbl">Location</span><br><span class="val">Toronto, Ontario</span></span>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="pay-card">
+          <span class="eyebrow">Payment</span>
+          <div class="lbl" style="font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ivory-dim);margin-bottom:.4rem">Interac e-Transfer</div>
+          <div class="etr">tennisyemane@gmail.com</div>
+          <div class="small">Send your session payment by e-Transfer to the address above.</div>
+          <div class="accepted">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            In-person payment also accepted
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">
+          <svg class="mark" viewBox="0 0 240 240" aria-hidden="true">
+            <circle cx="120" cy="120" r="112" fill="none" stroke="#c9a86a" stroke-width="4"/>
+            <g fill="#c9a86a" stroke="#c9a86a" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M98 86 Q112 80 122 86 L120 128 Q110 134 102 128 Z" stroke-width="2"/>
+              <circle cx="105" cy="69" r="12.5" stroke-width="1"/>
+              <path d="M92 64 Q100 56 112 58 L110 64 Z" stroke-width="1"/>
+              <path d="M119 88 L141 73 L151 51" fill="none" stroke-width="12"/>
+              <ellipse cx="163" cy="39" rx="11.5" ry="14.5" transform="rotate(26 163 39)" fill="none" stroke-width="5.5"/>
+              <path d="M151 51 L157 47" fill="none" stroke-width="5.5"/>
+              <circle cx="186" cy="34" r="6.5" stroke="none"/>
+              <path d="M100 90 L88 102 L99 116" fill="none" stroke-width="11"/>
+              <path d="M118 126 L150 119 L181 110" fill="none" stroke-width="17"/>
+              <path d="M181 110 L195 105" fill="none" stroke-width="11"/>
+              <path d="M104 130 L111 167 L99 198" fill="none" stroke-width="17"/>
+              <path d="M99 198 L85 201" fill="none" stroke-width="11"/>
+            </g>
+          </svg>
+          <span>YEMANE <span style="color:var(--gold);font-style:italic">Tekeste</span></span>
+        </div>
+        <p class="foot-tag">Private-club sophistication meets elite performance. Toronto.</p>
+      </div>
+      <div class="foot-links">
+        <a href="#about">Coach</a>
+        <a href="#services">Programs</a>
+        <a href="#assessment">Assessment</a>
+        <a href="#contact">Contact</a>
+        <a href="https://instagram.com/protenniswyemane" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> Yemane Tekeste · Private Tennis Coaching · Toronto, ON</span>
+      <span>Tennis Lessons Toronto · Private Tennis Coach Toronto · Elite Coaching</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING ACTIONS ============ -->
+<div class="float">
+  <button class="fab fab-chat" id="openChat" aria-label="Ask the assistant">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#0b0b0a" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-8.5 8.5 8.5 8.5 0 01-3.8-.9L3 21l1.9-5.7A8.38 8.38 0 014 11.5 8.5 8.5 0 0112.5 3 8.38 8.38 0 0121 11.5z"/></svg>
+  </button>
+  <a class="fab fab-wa" id="fabWa" href="#" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="#fff"><path d="M17.5 14.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2s-.8.9-1 1.1c-.2.2-.4.2-.7.1-1.7-.9-2.9-1.6-4-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5C9.7 9 9.1 7.5 8.8 6.9c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.4 4.7 2 .9 2.8.9 3.8.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2"/></svg>
+  </a>
+</div>
+
+<!-- ============ CHAT PANEL ============ -->
+<div class="chat" id="chat">
+  <div class="chat-head">
+    <div class="who">
+      <span class="av"><svg viewBox="0 0 24 24" fill="none" stroke="#0b0b0a" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-8.5 8.5 8.5 8.5 0 01-3.8-.9L3 21l1.9-5.7A8.38 8.38 0 014 11.5 8.5 8.5 0 0112.5 3 8.38 8.38 0 0121 11.5z"/></svg></span>
+      <div><div class="nm">Court Concierge</div><div class="st">● Online</div></div>
+    </div>
+    <button class="chat-x" id="closeChat" aria-label="Close">×</button>
+  </div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chips" id="chips"></div>
+  <div class="chat-input">
+    <input type="text" id="chatInput" placeholder="Ask about programs, pricing…" autocomplete="off">
+    <button id="chatSend" aria-label="Send"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></button>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   ⚙️  CONFIG — EDIT THIS ONE LINE
+   Put your WhatsApp number in full international format,
+   digits only (country code + number, no +, spaces or dashes).
+   Canada example: 1 416 555 1234  ->  "14165551234"
+   ============================================================ */
+const WHATSAPP_NUMBER = "14372300877";   // Yemane's WhatsApp (Toronto, +1 437 230 0877)
+const EMAIL = "tennisyemane@gmail.com";
+
+/* Build a WhatsApp deep link with a prefilled message */
+function wa(msg){
+  return "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(msg);
+}
+const defaultMsg = "Hi Coach Yemane — I found your site online and I'd like to book a session.";
+
+/* Wire all WhatsApp buttons */
+["navBook","heroBook","fabWa","waContact"].forEach(function(id){
+  var el = document.getElementById(id);
+  if(el){ el.href = wa(defaultMsg); el.target="_blank"; el.rel="noopener"; }
+});
+
+/* ---- Nav ---- */
+var nav=document.getElementById('nav');
+addEventListener('scroll',function(){ nav.classList.toggle('scrolled', scrollY>40); });
+var burger=document.getElementById('burger'), navlinks=document.getElementById('navlinks');
+burger.addEventListener('click',function(){ navlinks.classList.toggle('open'); });
+navlinks.querySelectorAll('a').forEach(function(a){ a.addEventListener('click',function(){ navlinks.classList.remove('open'); }); });
+
+/* ---- Reveal on scroll ---- */
+var io=new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+
+/* ---- Year ---- */
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+/* ============================================================
+   ASSESSMENT FUNNEL
+   ============================================================ */
+(function(){
+  var data={name:"",age:"",experience:"",skill:"",goal:"",availability:""};
+  var cur=0;
+  var steps=document.querySelectorAll('.assess #'+'progress'); // noop
+  var stepEls=document.querySelectorAll('.step');
+  var progress=document.getElementById('progress').children;
+
+  function show(n){
+    stepEls.forEach(function(s){s.classList.remove('active');});
+    document.querySelector('.step[data-step="'+n+'"]').classList.add('active');
+    for(var i=0;i<progress.length;i++){ progress[i].classList.toggle('on', i<=n); }
+    cur=n;
+    document.getElementById('assessment').scrollIntoView({behavior:'smooth',block:'start'});
+  }
+
+  /* option selectors */
+  document.querySelectorAll('.opts').forEach(function(group){
+    group.addEventListener('click',function(e){
+      var opt=e.target.closest('.opt'); if(!opt)return;
+      group.querySelectorAll('.opt').forEach(function(o){o.classList.remove('sel');});
+      opt.classList.add('sel');
+      data[group.dataset.field]=opt.dataset.val;
+    });
+  });
+
+  /* next / back */
+  document.querySelectorAll('[data-next]').forEach(function(b){
+    b.addEventListener('click',function(){
+      if(cur===0){
+        var nm=document.getElementById('f_name').value.trim();
+        if(!nm){ document.getElementById('f_name').focus(); return; }
+        data.name=nm;
+      }
+      var active=document.querySelector('.step[data-step="'+cur+'"]');
+      var grp=active.querySelector('.opts');
+      if(grp && !data[grp.dataset.field]){ grp.style.animation='shake .4s'; setTimeout(function(){grp.style.animation='';},400); return; }
+      show(cur+1);
+    });
+  });
+  document.querySelectorAll('[data-back]').forEach(function(b){ b.addEventListener('click',function(){ show(cur-1); }); });
+  document.querySelector('[data-restart]').addEventListener('click',function(){ show(0); });
+
+  /* recommendation engine */
+  function recommend(){
+    var g=data.goal, s=data.skill, a=data.age;
+    if(a.indexOf('Junior')>-1 || g.indexOf('Junior')>-1) return ["Junior Development","A structured long-term pathway that builds fundamentals, athleticism, and a true competitor's mindset — paced perfectly for a developing player."];
+    if(g.indexOf('Compete')>-1 || s==='Competitive / Tournament' || s==='Advanced') return ["Match Strategy + Private Lessons","High-performance work on point construction, patterns, and match psychology, paired with private technical sessions to sharpen every edge."];
+    if(g.indexOf('fundamentals')>-1 || s==='Beginner') return ["Private Lessons","One-on-one coaching focused on clean fundamentals and confident movement — the fastest, most personal way to build a real game."];
+    if(g.indexOf('technique')>-1) return ["Private Lessons + Video Analysis","Targeted technical coaching backed by frame-by-frame video, so you can see and feel the improvement session to session."];
+    return ["Performance Assessment","A full evaluation of your technical, physical, and tactical game to map the ideal program for your goals."];
+  }
+
+  document.querySelector('[data-result]').addEventListener('click',function(){
+    var active=document.querySelector('.step[data-step="5"]');
+    if(!data.availability){ var grp=active.querySelector('.opts'); grp.style.animation='shake .4s'; setTimeout(function(){grp.style.animation='';},400); return; }
+    var r=recommend();
+    document.getElementById('r_hi').textContent="Thank you, "+data.name.split(' ')[0];
+    document.getElementById('r_rec').textContent=r[0];
+    document.getElementById('r_text').textContent=r[1];
+    var msg="Hi Coach Yemane, I completed the assessment on your site.\n\n"
+      +"• Name: "+data.name+"\n"
+      +"• Age group: "+data.age+"\n"
+      +"• Experience: "+data.experience+"\n"
+      +"• Skill level: "+data.skill+"\n"
+      +"• Goal: "+data.goal+"\n"
+      +"• Availability: "+data.availability+"\n\n"
+      +"Recommended for me: "+r[0]+". I'd like to book a session.";
+    var btn=document.getElementById('r_wa'); btn.href=wa(msg); btn.target="_blank"; btn.rel="noopener";
+    show(6);
+  });
+})();
+
+/* shake keyframe injected */
+var st=document.createElement('style');st.textContent='@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}';document.head.appendChild(st);
+
+/* ============================================================
+   COURT CONCIERGE  — rule-based assistant
+   Covers: pricing, programs, availability, locations,
+   assessments, coaching process. Routes to WhatsApp.
+   ============================================================ */
+(function(){
+  var chat=document.getElementById('chat'), body=document.getElementById('chatBody'),
+      chips=document.getElementById('chips'), input=document.getElementById('chatInput');
+  var opened=false;
+
+  function open(){ chat.classList.add('open'); if(!opened){ opened=true; greet(); } setTimeout(function(){input.focus();},200); }
+  function close(){ chat.classList.remove('open'); }
+  document.getElementById('openChat').addEventListener('click',open);
+  document.getElementById('closeChat').addEventListener('click',close);
+
+  function bubble(text,who){
+    var d=document.createElement('div'); d.className='msg '+who; d.innerHTML=text;
+    body.appendChild(d); body.scrollTop=body.scrollHeight;
+  }
+  function setChips(list){
+    chips.innerHTML='';
+    list.forEach(function(c){
+      var b=document.createElement('button'); b.className='chip'; b.textContent=c;
+      b.addEventListener('click',function(){ handle(c); }); chips.appendChild(b);
+    });
+  }
+  function greet(){
+    bubble("Welcome — I'm the Court Concierge for <b>Yemane Tekeste</b>, private tennis coaching in Toronto. I can help with programs, pricing, availability and assessments. What can I help you with?","bot");
+    setChips(["Pricing","Programs","Availability","Book a session","Free assessment","Location"]);
+  }
+
+  var waLink=function(m){ return '<a href="'+wa(m||defaultMsg)+'" target="_blank" rel="noopener">open WhatsApp</a>'; };
+
+  function reply(q){
+    q=q.toLowerCase();
+    if(/price|cost|rate|fee|how much|pricing|\$/.test(q))
+      return ["Coaching is tailored to each player, so pricing is set after a quick assessment of your level and goals — that keeps it fair and specific to you. The fastest way to get exact rates is to message Coach Yemane directly: "+waLink("Hi Coach Yemane, could you share pricing for coaching?")+". You can also use the free assessment on this page.",["Free assessment","Programs","Book a session"]];
+    if(/program|service|lesson|coaching|offer|train/.test(q))
+      return ["There are six pathways: <b>Private Lessons</b>, <b>Group Lessons</b>, <b>Video Analysis</b>, <b>Performance Assessment</b>, <b>Junior Development</b>, and <b>Match Strategy</b>. Each is built around measurement and individual development. Not sure which fits? The free assessment will recommend one.",["Free assessment","Private lessons","Junior development","Pricing"]];
+    if(/junior|kid|child|son|daughter|young/.test(q))
+      return ["<b>Junior Development</b> is a structured, long-term pathway — fundamentals, athleticism and a competitor's mindset, paced for a developing player. Many parents start with the free assessment so we can place the player correctly. Want to book? "+waLink("Hi Coach Yemane, I'm interested in junior coaching.")+".",["Free assessment","Book a session","Pricing"]];
+    if(/avail|when|time|schedule|open|hour|day/.test(q))
+      return ["Sessions run on weekday mornings and evenings plus weekends, with flexible slots for committed players. Exact openings change weekly — message Coach Yemane for current availability: "+waLink("Hi Coach Yemane, what's your current availability?")+".",["Book a session","Programs"]];
+    if(/where|location|court|toronto|area|address/.test(q))
+      return ["Coaching is based in <b>Toronto, Ontario</b>. Specific courts are arranged with you when you book. Message Coach Yemane to confirm the most convenient location: "+waLink("Hi Coach Yemane, where are sessions held?")+".",["Book a session","Availability"]];
+    if(/assess|evaluat|level|test/.test(q))
+      return ["The <b>free assessment</b> takes about a minute — a few questions about your age, experience, level and goals — and gives you a personal program recommendation, then sends it straight to WhatsApp. Scroll up to the Assessment section, or I can point you there.",["Free assessment","Programs"]];
+    if(/book|sign up|start|begin|register|reserve|join/.test(q))
+      return ["Wonderful. The quickest way to book is on WhatsApp — "+waLink(defaultMsg)+" — or complete the free assessment first and it'll prefill your details for Coach Yemane.",["Free assessment","Pricing","Availability"]];
+    if(/process|how.*work|expect|method|philosophy|approach/.test(q))
+      return ["The approach is simple: <i>measure everything, waste nothing.</i> You start with an assessment, receive a personal development plan, and progress is tracked session to session — often with video. It blends elite, results-driven athleticism with a refined private-club standard.",["Free assessment","Programs","Book a session"]];
+    if(/pay|e-transfer|etransfer|interac|cash/.test(q))
+      return ["Payment is by Interac e-Transfer to <b>"+EMAIL+"</b>, and in-person payment is also accepted. Any questions on this, just ask Coach Yemane: "+waLink("Hi Coach Yemane, a question about payment…")+".",["Book a session","Pricing"]];
+    if(/contact|email|reach|instagram|phone/.test(q))
+      return ["You can reach Coach Yemane on WhatsApp ("+waLink(defaultMsg)+"), on Instagram <b>@protenniswyemane</b>, or by email at <b>"+EMAIL+"</b>.",["Book a session","Programs"]];
+    if(/hi|hello|hey|good (morning|afternoon|evening)/.test(q))
+      return ["Hello! Happy to help. Are you looking into programs, pricing, or booking a session?",["Programs","Pricing","Book a session","Free assessment"]];
+    if(/thank|thanks|cheers|great|perfect/.test(q))
+      return ["My pleasure. Whenever you're ready, Coach Yemane is one message away: "+waLink(defaultMsg)+".",["Book a session","Free assessment"]];
+    return ["Good question — for anything specific I haven't covered, Coach Yemane can answer directly on WhatsApp: "+waLink(defaultMsg)+". In the meantime I can help with programs, pricing, availability, location or the free assessment.",["Programs","Pricing","Availability","Free assessment"]];
+  }
+
+  function handle(text){
+    bubble(text,'user');
+    if(/free assessment/i.test(text)){
+      setTimeout(function(){ bubble("Taking you to the assessment now — it'll recommend the right program and send your details to WhatsApp.","bot"); document.getElementById('assessment').scrollIntoView({behavior:'smooth'}); },350);
+      return;
+    }
+    setTimeout(function(){ var r=reply(text); bubble(r[0],'bot'); setChips(r[1]); },420);
+  }
+
+  function send(){ var v=input.value.trim(); if(!v)return; input.value=''; handle(v); }
+  document.getElementById('chatSend').addEventListener('click',send);
+  input.addEventListener('keydown',function(e){ if(e.key==='Enter') send(); });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" width="760" height="220"><title>PROTENNIS WYEMANE - Primary</title>
+ <g transform="translate(10,18) scale(0.77)"><circle cx="120" cy="120" r="112" fill="none" stroke="#c9a86a" stroke-width="3"/>
+ <circle cx="120" cy="120" r="102" fill="none" stroke="#c9a86a" stroke-width="1" opacity="0.5"/>
+ <path d="M30 118 Q110 22 188 36" fill="none" stroke="#c9a86a" stroke-width="2" opacity="0.75"/>
+ <circle cx="188" cy="36" r="6.5" fill="#c9a86a"/>
+ <g fill="#c9a86a" stroke="#c9a86a" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M98 86 Q112 80 122 86 L120 128 Q110 134 102 128 Z" stroke-width="2"/>
+      <circle cx="105" cy="69" r="12.5" stroke-width="1"/>
+      <path d="M92 64 Q100 56 112 58 L110 64 Z" stroke-width="1"/>
+      <path d="M119 88 L141 73 L151 51" fill="none" stroke-width="12"/>
+      <ellipse cx="163" cy="39" rx="11.5" ry="14.5" transform="rotate(26 163 39)" fill="none" stroke-width="5.5"/>
+      <path d="M151 51 L157 47" fill="none" stroke-width="5.5"/>
+      <path d="M100 90 L88 102 L99 116" fill="none" stroke-width="11"/>
+      <path d="M118 126 L150 119 L181 110" fill="none" stroke-width="17"/>
+      <path d="M181 110 L195 105" fill="none" stroke-width="11"/>
+      <path d="M104 130 L111 167 L99 198" fill="none" stroke-width="17"/>
+      <path d="M99 198 L85 201" fill="none" stroke-width="11"/>
+    </g></g>
+ <text x="218" y="104" font-family="Cormorant Garamond, Georgia, serif" font-size="62" font-weight="600" letter-spacing="2" fill="#f4efe4">YEMANE</text>
+ <text x="220" y="150" font-family="Cormorant Garamond, Georgia, serif" font-size="46" font-style="italic" letter-spacing="3" fill="#c9a86a">Tekeste</text>
+ <line x1="220" y1="166" x2="640" y2="166" stroke="#c9a86a" stroke-width="0.8" opacity="0.5"/>
+ <text x="220" y="188" font-family="Inter, sans-serif" font-size="12" letter-spacing="6" fill="#cfc9ba">PRIVATE TENNIS COACHING · TORONTO</text>
+</svg>
