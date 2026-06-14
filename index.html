@@ -25,7 +25,7 @@
 <!-- ============ FONTS ============ -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <!-- ============ STRUCTURED DATA (SEO) ============ -->
 <script type="application/ld+json">
@@ -60,8 +60,10 @@
   --ivory-dim:#cfc9ba;
   --line:rgba(201,168,106,.22);
 
-  --serif:"Cormorant Garamond", Georgia, serif;
+  --serif:"Playfair Display", "Cormorant Garamond", Georgia, serif;
+  --serif-alt:"Cormorant Garamond", Georgia, serif;
   --sans:"Inter", system-ui, -apple-system, sans-serif;
+  --foil:linear-gradient(168deg,#f6e7bd 0%,#dcbb7d 32%,#b89440 56%,#8f6f30 70%,#e7cf9a 100%);
 
   --ease:cubic-bezier(.16,.84,.44,1);
 }
@@ -70,14 +72,22 @@
 html{scroll-behavior:smooth}
 body{
   font-family:var(--sans);
-  background:var(--forest-deep);
+  background:#0e3624;
   color:var(--ivory);
   line-height:1.6;
   font-weight:300;
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
 }
-h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.05;letter-spacing:.005em}
+/* Deep forest-green cardstock backdrop — fixed behind everything */
+body::before{content:"";position:fixed;inset:0;z-index:-3;pointer-events:none;
+  background:
+    radial-gradient(ellipse at 50% -8%, #1d5238 0%, transparent 55%),
+    linear-gradient(180deg,#10402b 0%, #0e3624 45%, #0a2c1d 100%);}
+body::after{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;opacity:.055;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23p)'/%3E%3C/svg%3E");
+  background-size:170px 170px;mix-blend-mode:overlay;}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacing:0}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 section{position:relative}
@@ -124,7 +134,7 @@ nav{
   padding:1.4rem 32px;transition:all .5s var(--ease);
 }
 nav.scrolled{
-  background:rgba(11,11,10,.82);backdrop-filter:blur(14px);
+  background:rgba(9,30,21,.78);backdrop-filter:blur(14px);
   padding:.85rem 32px;border-bottom:1px solid var(--line);
 }
 .nav-logo{display:flex;align-items:center;gap:.7rem;font-family:var(--serif);
@@ -218,7 +228,7 @@ nav.scrolled{
 .reveal.in{opacity:1;transform:none}
 
 /* ============ ABOUT ============ */
-.about{background:linear-gradient(180deg,var(--forest-deep),var(--black))}
+.about{background:transparent}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
 .about-portrait{aspect-ratio:4/5;border:1px solid var(--line);position:relative;
   background:linear-gradient(135deg,var(--forest),var(--black));overflow:hidden}
@@ -235,7 +245,7 @@ nav.scrolled{
 .pillar .t{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ivory-dim)}
 
 /* ============ SERVICES ============ */
-.services{background:var(--black)}
+.services{background:transparent;overflow:hidden}
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
 .svc{border:1px solid var(--line);padding:2.6rem 2rem;background:rgba(20,48,39,.25);
   transition:all .55s var(--ease);position:relative;overflow:hidden}
@@ -249,7 +259,7 @@ nav.scrolled{
 .svc .more{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
 
 /* ============ ASSESSMENT FUNNEL ============ */
-.assess{background:linear-gradient(180deg,var(--black),var(--forest-deep))}
+.assess{background:transparent;overflow:hidden}
 .assess-card{max-width:680px;margin:0 auto;border:1px solid var(--line);
   background:rgba(11,11,10,.5);padding:3.2rem;backdrop-filter:blur(6px)}
 .progress{display:flex;gap:.5rem;margin-bottom:2.4rem}
@@ -286,7 +296,7 @@ nav.scrolled{
 .result p{color:var(--ivory-dim);margin-bottom:2rem}
 
 /* ============ TESTIMONIALS ============ */
-.testi{background:var(--forest-deep)}
+.testi{background:transparent}
 .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
 .quote{border:1px solid var(--line);padding:2.6rem 2rem;background:rgba(20,48,39,.2)}
 .quote .stars{color:var(--gold);letter-spacing:.2em;margin-bottom:1.2rem;font-size:.9rem}
@@ -295,7 +305,7 @@ nav.scrolled{
 .quote .who b{color:var(--gold);font-weight:500}
 
 /* ============ INSTAGRAM ============ */
-.insta{background:linear-gradient(180deg,var(--forest-deep),var(--black))}
+.insta{background:transparent}
 .ig-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
 .ig-tile{aspect-ratio:1;border:1px solid var(--line);position:relative;overflow:hidden;
   background:linear-gradient(135deg,var(--forest),var(--black));display:flex;
@@ -306,7 +316,7 @@ nav.scrolled{
 .ig-tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 
 /* ============ CONTACT ============ */
-.contact{background:var(--black)}
+.contact{background:transparent;overflow:hidden}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem}
 .contact-block h3{font-size:1.5rem;margin-bottom:1.4rem}
 .contact-row{display:flex;align-items:center;gap:1rem;padding:1.2rem 0;border-bottom:1px solid var(--line)}
@@ -321,7 +331,7 @@ nav.scrolled{
 .pay-card .accepted svg{width:18px;height:18px;color:var(--gold)}
 
 /* ============ FOOTER ============ */
-footer{background:var(--forest-deep);border-top:1px solid var(--line);padding:4rem 0 2.5rem}
+footer{background:rgba(8,30,20,.55);border-top:1px solid var(--line);padding:4.5rem 0 2.5rem}
 .foot-grid{display:flex;justify-content:space-between;align-items:flex-start;gap:2rem;flex-wrap:wrap}
 .foot-logo{display:flex;align-items:center;gap:.8rem;font-family:var(--serif);font-size:1.5rem}
 .foot-logo .mark{width:46px;height:46px;border-radius:50%;object-fit:cover;display:block}
@@ -333,7 +343,57 @@ footer{background:var(--forest-deep);border-top:1px solid var(--line);padding:4r
   display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;
   font-size:.72rem;letter-spacing:.1em;color:var(--ivory-dim)}
 
-/* ============ FLOATING WHATSAPP + CHAT ============ */
+/* ============================================================
+   BOUTIQUE PASS — cardstock green, gold-foil headers,
+   pressed-metal CTAs, ring motifs, generous whitespace
+   ============================================================ */
+.wrap{position:relative;z-index:1}
+
+/* Generous, exclusive spacing */
+.section{padding:9.5rem 0}
+.section-head{max-width:680px;margin:0 auto 5rem}
+
+/* Gold-foil primary headings */
+.section-head h2,.about-text h2{
+  background:var(--foil);-webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+}
+.hero h1 .l2{
+  background:var(--foil);-webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;font-style:italic;
+}
+
+/* Pressed-metal plaque buttons */
+.btn-gold{
+  background:linear-gradient(177deg,#f7e9c2 0%,#e2c485 17%,#c9a86a 50%,#ad8c52 83%,#d3b074 100%);
+  color:#241a08;border:1px solid #f1dca6;font-weight:600;
+  text-shadow:0 1px 0 rgba(255,255,255,.35);
+  box-shadow:
+    0 10px 26px rgba(0,0,0,.45),
+    0 2px 0 rgba(0,0,0,.22),
+    inset 0 2px 1px rgba(255,255,255,.78),
+    inset 0 -3px 6px rgba(120,86,30,.5);
+}
+.btn-gold:hover{filter:brightness(1.05);transform:translateY(-2px);
+  box-shadow:0 16px 34px rgba(0,0,0,.5),0 2px 0 rgba(0,0,0,.22),inset 0 2px 1px rgba(255,255,255,.82),inset 0 -3px 6px rgba(120,86,30,.45)}
+.btn-gold:active{transform:translateY(1px);
+  box-shadow:0 4px 12px rgba(0,0,0,.4),inset 0 2px 5px rgba(90,64,20,.6),inset 0 1px 0 rgba(255,255,255,.4)}
+
+/* Concentric gold-line brand motifs (subtle, clipped by section) */
+.services::before,.contact::before,.assess::before{content:"";position:absolute;z-index:0;pointer-events:none;
+  width:780px;height:780px;border-radius:50%;
+  background:repeating-radial-gradient(circle, transparent 0 37px, rgba(201,168,106,.055) 37px 38px);
+  -webkit-mask:radial-gradient(circle,#000 60%,transparent 72%);mask:radial-gradient(circle,#000 60%,transparent 72%);}
+.services::before{top:-200px;right:-220px}
+.contact::before{bottom:-240px;left:-240px}
+.assess::before{top:-260px;left:50%;transform:translateX(-50%);opacity:.7}
+
+/* Hero crest as the anchor */
+.hero-crest{width:clamp(118px,21vw,168px);height:auto;margin:0 auto 1.6rem;
+  filter:drop-shadow(0 10px 26px rgba(0,0,0,.5));
+  opacity:0;animation:rise 1.1s var(--ease) .15s forwards}
+.hero h1{font-size:clamp(2.6rem,8vw,6rem)}
+
 .float{position:fixed;right:22px;bottom:22px;z-index:200;display:flex;flex-direction:column;gap:14px;align-items:flex-end}
 .fab{width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;
   cursor:pointer;border:none;box-shadow:0 8px 30px rgba(0,0,0,.4);transition:transform .3s}
@@ -442,6 +502,7 @@ footer{background:var(--forest-deep);border-top:1px solid var(--line);padding:4r
   </svg>
 
   <div class="hero-content">
+    <img class="hero-crest" src="crest.png" alt="Yemane Tekeste crest" width="240" height="240" />
     <span class="eyebrow">Private Coaching · Toronto, Ontario</span>
     <h1><span class="l1">Refined Coaching.</span><span class="l2">Elite Performance.</span></h1>
     <p class="sub">Private Coaching · Performance Analysis · Elite Development · Toronto</p>
