@@ -19,7 +19,8 @@
 <meta property="og:locale" content="en_CA" />
 <meta property="og:url" content="https://tennisprostock.com/" />
 
-<link rel="icon" type="image/svg+xml" href="logo-icon.svg" />
+<link rel="icon" type="image/png" href="crest.png" />
+<link rel="apple-touch-icon" href="crest.png" />
 
 <!-- ============ FONTS ============ -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -106,8 +107,13 @@ section{position:relative}
   border-radius:1px;cursor:pointer;transition:all .5s var(--ease);
   background:transparent;color:var(--ivory);
 }
-.btn-gold{background:var(--gold);color:var(--black);border-color:var(--gold)}
-.btn-gold:hover{background:var(--gold-bright);border-color:var(--gold-bright);transform:translateY(-2px)}
+.btn-gold{
+  background:linear-gradient(135deg,#e7cd92 0%,#c9a86a 34%,#f3deab 50%,#c9a86a 66%,#ad8c52 100%);
+  color:#0b0b0a;border-color:#e7cd92;font-weight:600;
+  box-shadow:0 4px 22px rgba(201,168,106,.35), inset 0 1px 0 rgba(255,255,255,.55);
+}
+.btn-gold:hover{filter:brightness(1.07);transform:translateY(-2px);
+  box-shadow:0 9px 30px rgba(201,168,106,.5), inset 0 1px 0 rgba(255,255,255,.65)}
 .btn-ghost:hover{background:rgba(201,168,106,.1);transform:translateY(-2px)}
 .btn svg{width:16px;height:16px}
 
@@ -123,7 +129,8 @@ nav.scrolled{
 }
 .nav-logo{display:flex;align-items:center;gap:.7rem;font-family:var(--serif);
   font-size:1.32rem;letter-spacing:.04em;color:var(--ivory)}
-.nav-logo .mark{width:34px;height:34px}
+.nav-logo .mark{width:40px;height:40px;border-radius:50%;object-fit:cover;display:block;
+  filter:drop-shadow(0 1px 4px rgba(0,0,0,.45))}
 .nav-logo b{font-weight:500}
 .nav-logo .sub{color:var(--gold);font-style:italic;font-weight:400}
 .nav-links{display:flex;gap:2.3rem;align-items:center}
@@ -157,6 +164,25 @@ nav.scrolled{
 .hero-arc circle{fill:var(--gold);opacity:0;animation:ballin 1s ease 3.4s forwards}
 @keyframes draw{to{stroke-dashoffset:0}}
 @keyframes ballin{to{opacity:1}}
+
+/* Concentric radiating gold rings — the signature "court echo" motif */
+.hero-rings{position:absolute;top:54%;left:50%;transform:translate(-50%,-50%);
+  width:min(1500px,165vw);height:min(1500px,165vw);z-index:1;
+  opacity:0;pointer-events:none;animation:ringsIn 2.4s var(--ease) .4s forwards}
+.hero-rings circle{fill:none;stroke:var(--gold);stroke-width:1;vector-effect:non-scaling-stroke}
+@keyframes ringsIn{to{opacity:.32}}
+@media(prefers-reduced-motion:reduce){.hero-rings{opacity:.32;animation:none}}
+
+/* Polished marble accent bands, top & bottom of the hero */
+.hero::before,.hero::after{content:"";position:absolute;left:0;right:0;height:78px;z-index:1;pointer-events:none;
+  background:
+    linear-gradient(115deg,transparent 18%,rgba(201,168,106,.20) 19%,transparent 21%),
+    linear-gradient(125deg,transparent 46%,rgba(201,168,106,.14) 47%,transparent 49%),
+    linear-gradient(105deg,transparent 71%,rgba(201,168,106,.18) 72%,transparent 74%),
+    radial-gradient(ellipse at 30% 50%,rgba(40,40,40,.6),transparent 70%),
+    linear-gradient(90deg,#070707,#101010 50%,#070707)}
+.hero::before{top:0;-webkit-mask:linear-gradient(180deg,#000,transparent);mask:linear-gradient(180deg,#000,transparent)}
+.hero::after{bottom:0;-webkit-mask:linear-gradient(0deg,#000,transparent);mask:linear-gradient(0deg,#000,transparent)}
 
 .hero-content{position:relative;z-index:2;padding:0 28px;max-width:920px}
 .hero .eyebrow{margin-bottom:1.8rem;opacity:0;animation:rise 1s var(--ease) .3s forwards}
@@ -296,7 +322,7 @@ nav.scrolled{
 footer{background:var(--forest-deep);border-top:1px solid var(--line);padding:4rem 0 2.5rem}
 .foot-grid{display:flex;justify-content:space-between;align-items:flex-start;gap:2rem;flex-wrap:wrap}
 .foot-logo{display:flex;align-items:center;gap:.8rem;font-family:var(--serif);font-size:1.5rem}
-.foot-logo .mark{width:40px}
+.foot-logo .mark{width:46px;height:46px;border-radius:50%;object-fit:cover;display:block}
 .foot-tag{color:var(--ivory-dim);font-size:.9rem;margin-top:1rem;max-width:280px;font-style:italic;font-family:var(--serif)}
 .foot-links{display:flex;gap:2.4rem;flex-wrap:wrap}
 .foot-links a{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ivory-dim);transition:color .3s}
@@ -373,23 +399,7 @@ footer{background:var(--forest-deep);border-top:1px solid var(--line);padding:4r
 <!-- ============ NAV ============ -->
 <nav id="nav">
   <a href="#top" class="nav-logo">
-    <svg class="mark" viewBox="0 0 240 240" aria-hidden="true">
-      <circle cx="120" cy="120" r="112" fill="none" stroke="#c9a86a" stroke-width="4"/>
-      <g fill="#c9a86a" stroke="#c9a86a" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M98 86 Q112 80 122 86 L120 128 Q110 134 102 128 Z" stroke-width="2"/>
-        <circle cx="105" cy="69" r="12.5" stroke-width="1"/>
-        <path d="M92 64 Q100 56 112 58 L110 64 Z" stroke-width="1"/>
-        <path d="M119 88 L141 73 L151 51" fill="none" stroke-width="12"/>
-        <ellipse cx="163" cy="39" rx="11.5" ry="14.5" transform="rotate(26 163 39)" fill="none" stroke-width="5.5"/>
-        <path d="M151 51 L157 47" fill="none" stroke-width="5.5"/>
-        <circle cx="186" cy="34" r="6.5" stroke="none"/>
-        <path d="M100 90 L88 102 L99 116" fill="none" stroke-width="11"/>
-        <path d="M118 126 L150 119 L181 110" fill="none" stroke-width="17"/>
-        <path d="M181 110 L195 105" fill="none" stroke-width="11"/>
-        <path d="M104 130 L111 167 L99 198" fill="none" stroke-width="17"/>
-        <path d="M99 198 L85 201" fill="none" stroke-width="11"/>
-      </g>
-    </svg>
+    <img src="crest.png" class="mark" alt="Yemane Tekeste crest" width="240" height="240" />
     <span><b>YEMANE</b> <span class="sub">Tekeste</span></span>
   </a>
   <div class="nav-links" id="navlinks">
@@ -416,9 +426,14 @@ footer{background:var(--forest-deep);border-top:1px solid var(--line);padding:4r
     <div class="hero-overlay"></div>
   </div>
 
-  <svg class="hero-arc" viewBox="0 0 1100 400" aria-hidden="true">
-    <path d="M40 360 Q550 -60 1060 360"/>
-    <circle cx="1060" cy="360" r="6"/>
+  <svg class="hero-rings" viewBox="0 0 1000 1000" aria-hidden="true">
+    <circle cx="500" cy="500" r="120" opacity=".55"/>
+    <circle cx="500" cy="500" r="190" opacity=".48"/>
+    <circle cx="500" cy="500" r="260" opacity=".42"/>
+    <circle cx="500" cy="500" r="330" opacity=".36"/>
+    <circle cx="500" cy="500" r="400" opacity=".30"/>
+    <circle cx="500" cy="500" r="468" opacity=".24"/>
+    <circle cx="868" cy="500" r="7" fill="#c9a86a" stroke="none" opacity=".9"/>
   </svg>
 
   <div class="hero-content">
@@ -693,23 +708,7 @@ footer{background:var(--forest-deep);border-top:1px solid var(--line);padding:4r
     <div class="foot-grid">
       <div>
         <div class="foot-logo">
-          <svg class="mark" viewBox="0 0 240 240" aria-hidden="true">
-            <circle cx="120" cy="120" r="112" fill="none" stroke="#c9a86a" stroke-width="4"/>
-            <g fill="#c9a86a" stroke="#c9a86a" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M98 86 Q112 80 122 86 L120 128 Q110 134 102 128 Z" stroke-width="2"/>
-              <circle cx="105" cy="69" r="12.5" stroke-width="1"/>
-              <path d="M92 64 Q100 56 112 58 L110 64 Z" stroke-width="1"/>
-              <path d="M119 88 L141 73 L151 51" fill="none" stroke-width="12"/>
-              <ellipse cx="163" cy="39" rx="11.5" ry="14.5" transform="rotate(26 163 39)" fill="none" stroke-width="5.5"/>
-              <path d="M151 51 L157 47" fill="none" stroke-width="5.5"/>
-              <circle cx="186" cy="34" r="6.5" stroke="none"/>
-              <path d="M100 90 L88 102 L99 116" fill="none" stroke-width="11"/>
-              <path d="M118 126 L150 119 L181 110" fill="none" stroke-width="17"/>
-              <path d="M181 110 L195 105" fill="none" stroke-width="11"/>
-              <path d="M104 130 L111 167 L99 198" fill="none" stroke-width="17"/>
-              <path d="M99 198 L85 201" fill="none" stroke-width="11"/>
-            </g>
-          </svg>
+          <img src="crest.png" class="mark" alt="Yemane Tekeste crest" width="240" height="240" />
           <span>YEMANE <span style="color:var(--gold);font-style:italic">Tekeste</span></span>
         </div>
         <p class="foot-tag">Private-club sophistication meets elite performance. Toronto.</p>
