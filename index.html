@@ -934,8 +934,18 @@ var st=document.createElement('style');st.textContent='@keyframes shake{0%,100%{
 
   function handle(text){
     bubble(text,'user');
+    // Free assessment -> close the chat and take them straight to the form
     if(/free assessment/i.test(text)){
-      setTimeout(function(){ bubble("Taking you to the assessment now — it'll recommend the right program and send your details to WhatsApp.","bot"); document.getElementById('assessment').scrollIntoView({behavior:'smooth'}); },350);
+      close();
+      var sec=document.getElementById('assessment');
+      var y=sec.getBoundingClientRect().top + window.pageYOffset - 70;
+      window.scrollTo({top:y,behavior:'smooth'});
+      return;
+    }
+    // Book a session -> open WhatsApp directly (kept in the click gesture so it isn't blocked)
+    if(/^\s*book a session\s*$/i.test(text)){
+      window.open(wa(defaultMsg),'_blank','noopener');
+      close();
       return;
     }
     setTimeout(function(){ var r=reply(text); bubble(r[0],'bot'); setChips(r[1]); },420);
