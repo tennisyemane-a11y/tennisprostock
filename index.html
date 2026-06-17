@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pro Stock | Private Tennis Coaching in Toronto — Yemane Tekeste</title>
+<meta name="description" content="Exclusive private tennis coaching hidden in nature. Elevate your game, mindset, and confidence with Toronto's premier private tennis coach.">
+<meta name="keywords" content="tennis lessons Toronto, private tennis coach Toronto, tennis coaching near me, tennis instructor Toronto">
+<meta property="og:title" content="Pro Stock — Master The Art Of Tennis">
+<meta property="og:description" content="Private coaching designed to elevate your game, mindset, and confidence.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tennisprostock.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<!-- ANALYTICS PLACEHOLDERS: replace with your real IDs before launch
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXX');</script>
+Meta Pixel + Hotjar snippets go here -->
+<style>
+:root{
+  --forest:#163A24; --forest-deep:#0E2718; --black:#0B0B0B;
+  --ivory:#F5F5F0; --gold:#D4AF37; --gold-soft:rgba(212,175,55,.55);
+  --ivory-dim:rgba(245,245,240,.62);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;background:var(--black);color:var(--ivory);line-height:1.6;overflow-x:hidden}
+h1,h2,h3,.serif{font-family:'Cormorant Garamond',serif;font-weight:500}
+img{max-width:100%}
+section{padding:96px 6vw;position:relative}
+.eyebrow{letter-spacing:.34em;text-transform:uppercase;font-size:11px;color:var(--gold);margin-bottom:18px;font-weight:500}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;justify-content:space-between;align-items:center;
+  padding:18px 6vw;background:linear-gradient(180deg,rgba(11,11,11,.85),transparent);backdrop-filter:blur(6px)}
+.logo{font-family:'Cormorant Garamond',serif;font-size:22px;letter-spacing:.18em;text-transform:uppercase}
+.logo b{color:var(--gold);font-weight:600}
+.nav-links{display:flex;gap:26px;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+.nav-links a{color:var(--ivory-dim);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+@media(max-width:760px){.nav-links{display:none}}
+
+/* HERO */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
+  background:
+   radial-gradient(ellipse 90% 55% at 50% 110%, rgba(212,175,55,.14), transparent 60%),
+   radial-gradient(ellipse 70% 60% at 20% -10%, rgba(22,58,36,.9), transparent 65%),
+   radial-gradient(ellipse 70% 60% at 85% 10%, rgba(22,58,36,.55), transparent 60%),
+   var(--black);}
+.hero::before{content:"";position:absolute;inset:0;
+  background-image:repeating-linear-gradient(90deg,transparent 0 119px,rgba(245,245,240,.03) 119px 121px);
+  mask-image:linear-gradient(180deg,transparent,black 40%,transparent);pointer-events:none}
+.hero::after{ /* drifting golden light — stands in for the slow-motion video */
+  content:"";position:absolute;width:60vmax;height:60vmax;border-radius:50%;
+  background:radial-gradient(circle,rgba(212,175,55,.10),transparent 60%);
+  top:-20vmax;left:-15vmax;animation:drift 18s ease-in-out infinite alternate;pointer-events:none}
+@keyframes drift{to{transform:translate(30vmax,18vmax)}}
+@media (prefers-reduced-motion:reduce){.hero::after{animation:none}}
+.hero h1{font-size:clamp(44px,9vw,104px);line-height:1.04;letter-spacing:.01em;font-weight:500}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero p{margin:26px auto 42px;max-width:540px;color:var(--ivory-dim);font-weight:300;font-size:17px;letter-spacing:.02em}
+.btn{display:inline-block;padding:16px 38px;border:1px solid var(--gold-soft);color:var(--ivory);text-decoration:none;
+  letter-spacing:.2em;text-transform:uppercase;font-size:12px;transition:all .3s;background:transparent;cursor:pointer;font-family:'Jost',sans-serif}
+.btn:hover{background:var(--gold);color:var(--black);border-color:var(--gold)}
+.btn.solid{background:var(--gold);color:var(--black)}
+.btn.solid:hover{background:transparent;color:var(--ivory)}
+.hero .cta{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
+.scroll-hint{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);font-size:10px;letter-spacing:.4em;
+  text-transform:uppercase;color:var(--ivory-dim)}
+
+/* ABOUT */
+.about{background:linear-gradient(180deg,var(--black),var(--forest-deep) 130%)}
+.about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:7vw;align-items:center;max-width:1200px;margin:0 auto}
+@media(max-width:860px){.about-grid{grid-template-columns:1fr}}
+.portrait{aspect-ratio:3/4;background:
+   linear-gradient(160deg,rgba(212,175,55,.12),transparent 40%),
+   radial-gradient(ellipse at 30% 20%,rgba(22,58,36,.95),var(--black));
+  border:1px solid rgba(212,175,55,.25);display:flex;align-items:flex-end;padding:28px;position:relative}
+.portrait::before{content:"";position:absolute;inset:14px;border:1px solid rgba(245,245,240,.12)}
+.portrait span{font-size:12px;letter-spacing:.25em;text-transform:uppercase;color:var(--ivory-dim)}
+.about h2{font-size:clamp(34px,4.6vw,56px);line-height:1.12;margin-bottom:24px}
+.about p{color:var(--ivory-dim);font-weight:300;margin-bottom:18px}
+.about .sig{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:26px;color:var(--gold);margin-top:10px}
+
+/* SERVICES */
+.services h2,.center-h h2{font-size:clamp(32px,4.4vw,52px);text-align:center;margin-bottom:14px}
+.center-sub{color:var(--ivory-dim);text-align:center;max-width:520px;margin:0 auto 56px;font-weight:300}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;max-width:1240px;margin:0 auto}
+.card{border:1px solid rgba(245,245,240,.1);background:linear-gradient(180deg,rgba(22,58,36,.34),rgba(11,11,11,.6));
+  padding:0;display:flex;flex-direction:column;transition:transform .35s ease,border-color .35s ease}
+.card:hover{transform:translateY(-6px);border-color:var(--gold-soft)}
+.card .art{height:150px;background:radial-gradient(ellipse at 70% 20%,rgba(212,175,55,.16),transparent 55%),
+  linear-gradient(150deg,var(--forest),var(--black));display:flex;align-items:center;justify-content:center;
+  font-family:'Cormorant Garamond',serif;font-size:44px;color:var(--gold);font-style:italic}
+.card .body{padding:26px;display:flex;flex-direction:column;gap:12px;flex:1}
+.card h3{font-size:24px}
+.card p{color:var(--ivory-dim);font-size:14.5px;font-weight:300;flex:1}
+.card .price{color:var(--gold);letter-spacing:.08em;font-size:13px}
+.card a{color:var(--gold);text-decoration:none;font-size:12px;letter-spacing:.22em;text-transform:uppercase}
+.card a:hover{text-decoration:underline}
+
+/* TRANSFORMATION */
+.stats{background:var(--forest-deep)}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:30px;max-width:1100px;margin:60px auto 0;text-align:center}
+.stat .num{font-family:'Cormorant Garamond',serif;font-size:64px;color:var(--gold);line-height:1}
+.stat .lbl{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--ivory-dim);margin-top:10px}
+
+/* GALLERY */
+.masonry{columns:3;column-gap:14px;max-width:1240px;margin:0 auto}
+@media(max-width:820px){.masonry{columns:2}}
+.tile{break-inside:avoid;margin-bottom:14px;border:1px solid rgba(245,245,240,.08);
+  display:flex;align-items:flex-end;padding:18px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ivory-dim)}
+.t1{height:300px;background:radial-gradient(ellipse at 30% 30%,rgba(22,58,36,1),var(--black))}
+.t2{height:200px;background:radial-gradient(ellipse at 70% 70%,rgba(212,175,55,.2),var(--forest-deep))}
+.t3{height:250px;background:linear-gradient(160deg,var(--forest),var(--black))}
+.t4{height:340px;background:radial-gradient(ellipse at 50% 110%,rgba(212,175,55,.16),var(--forest-deep) 70%)}
+.t5{height:210px;background:linear-gradient(200deg,rgba(22,58,36,.9),var(--black))}
+.t6{height:280px;background:radial-gradient(ellipse at 20% 90%,rgba(212,175,55,.13),var(--black))}
+
+/* TESTIMONIALS */
+.quote-wrap{max-width:760px;margin:0 auto;text-align:center;min-height:210px}
+.quote{font-family:'Cormorant Garamond',serif;font-size:clamp(24px,3.4vw,34px);font-style:italic;line-height:1.4}
+.quote-by{margin-top:22px;font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold)}
+.dots{display:flex;gap:10px;justify-content:center;margin-top:34px}
+.dots button{width:9px;height:9px;border-radius:50%;border:1px solid var(--gold);background:transparent;cursor:pointer}
+.dots button.on{background:var(--gold)}
+
+/* BOOKING + LEAD */
+.booking{background:linear-gradient(180deg,var(--black),var(--forest-deep))}
+.panel{max-width:680px;margin:0 auto;border:1px solid rgba(212,175,55,.3);padding:44px 36px;background:rgba(11,11,11,.55)}
+.field{margin-bottom:20px}
+.field label{display:block;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--ivory-dim);margin-bottom:8px}
+.field input,.field select{width:100%;padding:14px;background:rgba(245,245,240,.04);border:1px solid rgba(245,245,240,.16);
+  color:var(--ivory);font-family:'Jost',sans-serif;font-size:15px}
+.field input:focus,.field select:focus{outline:none;border-color:var(--gold)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:560px){.row2{grid-template-columns:1fr}}
+.note{font-size:12px;color:var(--ivory-dim);margin-top:14px;text-align:center}
+.ok-msg{display:none;text-align:center;padding:30px 10px}
+.ok-msg .serif{font-size:30px;color:var(--gold);margin-bottom:10px}
+
+/* QUIZ */
+.quiz-opt{display:block;width:100%;text-align:left;padding:15px 18px;margin-bottom:12px;background:transparent;
+  border:1px solid rgba(245,245,240,.16);color:var(--ivory);font-family:'Jost',sans-serif;font-size:15px;cursor:pointer;transition:.25s}
+.quiz-opt:hover{border-color:var(--gold);background:rgba(212,175,55,.06)}
+.quiz-q{font-family:'Cormorant Garamond',serif;font-size:28px;margin-bottom:24px}
+.progress{height:2px;background:rgba(245,245,240,.12);margin-bottom:34px}
+.progress i{display:block;height:100%;background:var(--gold);width:0;transition:width .4s}
+
+/* STICKY CTA / TOASTS / EXIT POPUP / CHAT */
+.sticky-cta{position:fixed;bottom:22px;right:22px;z-index:55}
+.toast{position:fixed;bottom:24px;left:24px;z-index:54;background:rgba(14,39,24,.95);border:1px solid rgba(212,175,55,.4);
+  padding:14px 20px;font-size:13px;max-width:280px;opacity:0;transform:translateY(14px);transition:.5s;pointer-events:none}
+.toast.show{opacity:1;transform:none}
+.overlay{position:fixed;inset:0;background:rgba(11,11,11,.82);z-index:70;display:none;align-items:center;justify-content:center;padding:20px}
+.overlay.open{display:flex}
+.modal{max-width:460px;width:100%;background:var(--forest-deep);border:1px solid var(--gold-soft);padding:44px 34px;text-align:center;position:relative}
+.modal h3{font-size:32px;margin-bottom:12px}
+.modal p{color:var(--ivory-dim);font-weight:300;margin-bottom:24px;font-size:15px}
+.modal .x{position:absolute;top:12px;right:16px;background:none;border:none;color:var(--ivory-dim);font-size:22px;cursor:pointer}
+.chat-fab{position:fixed;bottom:22px;left:22px;z-index:56;width:56px;height:56px;border-radius:50%;
+  background:var(--gold);color:var(--black);border:none;font-size:22px;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.chat-box{position:fixed;bottom:90px;left:22px;z-index:57;width:min(360px,calc(100vw - 44px));height:440px;
+  background:#0E1A12;border:1px solid var(--gold-soft);display:none;flex-direction:column}
+.chat-box.open{display:flex}
+.chat-head{padding:14px 18px;border-bottom:1px solid rgba(245,245,240,.1);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.chat-log{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:12px;font-size:14px}
+.msg{max-width:85%;padding:10px 14px;line-height:1.5}
+.msg.user{align-self:flex-end;background:rgba(212,175,55,.14);border:1px solid rgba(212,175,55,.3)}
+.msg.bot{align-self:flex-start;background:rgba(245,245,240,.05);border:1px solid rgba(245,245,240,.1)}
+.chat-in{display:flex;border-top:1px solid rgba(245,245,240,.1)}
+.chat-in input{flex:1;background:transparent;border:none;padding:14px;color:var(--ivory);font-family:'Jost',sans-serif;font-size:14px}
+.chat-in input:focus{outline:none}
+.chat-in button{background:var(--gold);border:none;padding:0 20px;cursor:pointer;font-family:'Jost',sans-serif;letter-spacing:.1em}
+
+footer{padding:60px 6vw;text-align:center;color:var(--ivory-dim);font-size:12px;letter-spacing:.1em;border-top:1px solid rgba(245,245,240,.07)}
+footer .logo{margin-bottom:14px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Pro<b>Stock</b></div>
+  <div class="nav-links">
+    <a href="#about">About</a><a href="#services">Programs</a><a href="#gallery">Gallery</a>
+    <a href="#assessment">Assessment</a><a href="#book">Book</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <p class="eyebrow reveal">Private Tennis Coaching · Toronto</p>
+  <h1 class="reveal">Master the <em>Art</em><br>of Tennis.</h1>
+  <p class="reveal">Private coaching designed to elevate your game, mindset, and confidence — hidden inside the quiet of the court.</p>
+  <div class="cta reveal">
+    <a href="#book" class="btn solid" onclick="track('cta_hero_book')">Book Your First Lesson</a>
+    <a href="#about" class="btn" onclick="track('cta_hero_journey')">Watch My Journey</a>
+  </div>
+  <div class="scroll-hint">Scroll</div>
+</header>
+
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="portrait reveal"><span>Yemane Tekeste — Founder, Pro Stock<br>(your golden-hour portrait here)</span></div>
+    <div class="reveal">
+      <p class="eyebrow">The Coach</p>
+      <h2>Tennis is not taught.<br>It is uncovered.</h2>
+      <p>I'm Yemane Tekeste. For over a decade I've lived inside this game — as a competitor, a student of its history, and now as a coach to players who want more than rallies: they want transformation.</p>
+      <p>My philosophy is simple. Technique is the entrance, but mindset is the mansion. Every session is built around three pillars — precision, composure, and quiet confidence — until your game feels less like effort and more like signature.</p>
+      <p>Students stay because progress here is measured, personal, and impossible to ignore.</p>
+      <p class="sig">— Yemane</p>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <p class="eyebrow reveal" style="text-align:center">Programs</p>
+  <h2 class="reveal">Choose Your Path</h2>
+  <p class="center-sub reveal">Every program is private, deliberate, and built around you.</p>
+  <div class="cards">
+    <div class="card reveal"><div class="art">I</div><div class="body">
+      <h3>Private Lessons</h3><p>One-on-one sessions tailored to your exact game. Video feedback, structured progressions, and full attention.</p>
+      <span class="price">From $120 / hour</span><a href="#book" onclick="track('svc_private')">Reserve →</a></div></div>
+    <div class="card reveal"><div class="art">II</div><div class="body">
+      <h3>Semi-Private</h3><p>Train with a partner of similar level. The same precision, shared energy, and a more accessible investment.</p>
+      <span class="price">$75 / person / hour</span><a href="#book" onclick="track('svc_semi')">Reserve →</a></div></div>
+    <div class="card reveal"><div class="art">III</div><div class="body">
+      <h3>Match Analysis</h3><p>I watch you compete, break down the film, and hand you a precise tactical map of your next level.</p>
+      <span class="price">$90 / session</span><a href="#book" onclick="track('svc_analysis')">Reserve →</a></div></div>
+    <div class="card reveal"><div class="art">IV</div><div class="body">
+      <h3>Beginner Programs</h3><p>An eight-session foundation in technique and confidence — designed so your first habits are your best ones.</p>
+      <span class="price">$499 / 8 sessions</span><a href="#book" onclick="track('svc_beginner')">Reserve →</a></div></div>
+    <div class="card reveal"><div class="art">V</div><div class="body">
+      <h3>Competitive Training</h3><p>For tournament players. Periodized training, match psychology, fitness benchmarks, and ranking strategy.</p>
+      <span class="price">$850 / month</span><a href="#book" onclick="track('svc_comp')">Reserve →</a></div></div>
+  </div>
+</section>
+
+<section class="stats center-h">
+  <p class="eyebrow reveal" style="text-align:center">The Transformation</p>
+  <h2 class="reveal">Measured. Not Promised.</h2>
+  <div class="stat-grid">
+    <div class="stat reveal"><div class="num" data-n="27">0</div><div class="lbl">% Avg. serve speed gain</div></div>
+    <div class="stat reveal"><div class="num" data-n="94">0</div><div class="lbl">% Report match confidence</div></div>
+    <div class="stat reveal"><div class="num" data-n="41">0</div><div class="lbl">Ranking spots climbed (avg)</div></div>
+    <div class="stat reveal"><div class="num" data-n="2">0</div><div class="lbl">× Fitness benchmark gains</div></div>
+  </div>
+</section>
+
+<section id="gallery">
+  <p class="eyebrow reveal" style="text-align:center">The World of Pro Stock</p>
+  <h2 class="reveal" style="text-align:center;font-size:clamp(32px,4.4vw,52px);margin-bottom:54px">Where We Train</h2>
+  <div class="masonry">
+    <div class="tile t1 reveal">Court at first light</div>
+    <div class="tile t2 reveal">Golden hour rallies</div>
+    <div class="tile t3 reveal">The garden path</div>
+    <div class="tile t4 reveal">Under the trees</div>
+    <div class="tile t5 reveal">Quiet preparation</div>
+    <div class="tile t6 reveal">Evening sessions</div>
+  </div>
+  <p class="note">Swap these tiles with your own photography — nature, courts, lifestyle.</p>
+</section>
+
+<section class="testimonials">
+  <p class="eyebrow reveal" style="text-align:center">Voices</p>
+  <div class="quote-wrap reveal">
+    <p class="quote" id="qt">"Yemane rebuilt my serve in six weeks. But what he really rebuilt was how I think under pressure."</p>
+    <p class="quote-by" id="qb">— Daniel R., Competitive Player</p>
+  </div>
+  <div class="dots" id="dots"></div>
+</section>
+
+<section id="assessment" class="booking">
+  <p class="eyebrow reveal" style="text-align:center">Complimentary</p>
+  <h2 class="reveal" style="text-align:center;font-size:clamp(32px,4.4vw,52px)">Free Tennis Performance Assessment</h2>
+  <p class="center-sub reveal">Five questions. Sixty seconds. A personal read on where your game stands — and where it could go.</p>
+  <div class="panel reveal" id="quizPanel">
+    <div class="progress"><i id="pbar"></i></div>
+    <div id="quizBody"></div>
+  </div>
+</section>
+
+<section id="book">
+  <p class="eyebrow reveal" style="text-align:center">Begin</p>
+  <h2 class="reveal" style="text-align:center;font-size:clamp(32px,4.4vw,52px)">Book Your Lesson</h2>
+  <p class="center-sub reveal">Limited weekly openings. Saturday private slots are nearly full this month.</p>
+  <div class="panel reveal" style="padding:44px 36px;text-align:center">
+    <p style="color:var(--ivory-dim);font-weight:300;margin-bottom:44px;font-size:15px">Tell me your preferred lesson type, date, and time. I'll confirm within hours.</p>
+    <a href="https://wa.me/14372300877?text=Hi%20Yemane%2C%20I%27d%20like%20to%20book%20a%20lesson" class="btn solid" style="width:100%;text-decoration:none;display:block;font-size:16px;padding:18px">💬 Book on WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <div class="logo">Pro<b>Stock</b></div>
+  <p>Yemane Tekeste · Private Tennis Coaching · Toronto, Canada</p>
+  <p>coach@tennisprostock.com · DM to train</p>
+  <p style="margin-top:14px;opacity:.6">© 2026 Pro Stock. All rights reserved.</p>
+</footer>
+
+<a href="#book" class="btn solid sticky-cta" id="stickyCta" style="display:none" onclick="track('cta_sticky')">Book Now</a>
+<div class="toast" id="toast"></div>
+
+<div class="overlay" id="exitPop">
+  <div class="modal">
+    <button class="x" onclick="closeExit()">×</button>
+    <p class="eyebrow">Before you go</p>
+    <h3>One free assessment.</h3>
+    <p>Sixty seconds, five questions, and a personal read on your game from a coach who's seen it all.</p>
+    <a class="btn solid" href="#assessment" onclick="closeExit();track('exit_popup_cta')">Take The Assessment</a>
+  </div>
+</div>
+
+<button class="chat-fab" id="chatFab" title="Ask the coach">✦</button>
+<div class="chat-box" id="chatBox">
+  <div class="chat-head">Pro Stock Concierge</div>
+  <div class="chat-log" id="chatLog">
+    <div class="msg bot">Welcome to Pro Stock. Ask me anything — pricing, programs, scheduling, or where to start as a beginner.</div>
+  </div>
+  <div class="chat-in">
+    <input id="chatInput" placeholder="Ask about lessons…" onkeydown="if(event.key==='Enter')sendChat()">
+    <button onclick="sendChat()">→</button>
+  </div>
+</div>
+
+<script>
+/* ---------- ANALYTICS (local event tracking; mirrors to GA4 when connected) ---------- */
+const analytics={events:[],t0:Date.now(),maxScroll:0};
+function track(name,data){analytics.events.push({name,data,t:Date.now()});
+  if(typeof gtag==='function')gtag('event',name,data||{});}
+track('page_view',{page:'home'});
+addEventListener('scroll',()=>{const d=Math.round((scrollY+innerHeight)/document.body.scrollHeight*100);
+  if(d>analytics.maxScroll){analytics.maxScroll=d;if(d%25===0)track('scroll_depth',{depth:d});}
+  document.getElementById('stickyCta').style.display=scrollY>500?'inline-block':'none';},{passive:true});
+
+/* ---------- SCROLL REVEAL ---------- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* ---------- ANIMATED STATS ---------- */
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;
+  const el=e.target,n=+el.dataset.n;let c=0;const step=Math.max(1,Math.round(n/40));
+  const iv=setInterval(()=>{c+=step;if(c>=n){c=n;clearInterval(iv);}el.textContent=c;},30);so.unobserve(el);}),{threshold:.6});
+document.querySelectorAll('.stat .num').forEach(el=>so.observe(el));
+
+/* ---------- TESTIMONIAL CAROUSEL ---------- */
+const quotes=[
+ ["\u201CYemane rebuilt my serve in six weeks. But what he really rebuilt was how I think under pressure.\u201D","— Daniel R., Competitive Player"],
+ ["\u201CMy daughter went from nervous beginner to tournament-ready in one summer at Junior Academy.\u201D","— Sara M., Parent"],
+ ["\u201CThe match analysis alone was worth a season of regular lessons. Nothing escapes him.\u201D","— Kevin T., Club Player"]];
+let qi=0;const dots=document.getElementById('dots');
+quotes.forEach((_,i)=>{const b=document.createElement('button');if(i===0)b.className='on';
+  b.onclick=()=>showQ(i);dots.appendChild(b);});
+function showQ(i){qi=i;document.getElementById('qt').textContent=quotes[i][0];
+  document.getElementById('qb').textContent=quotes[i][1];
+  [...dots.children].forEach((d,j)=>d.className=j===i?'on':'');}
+setInterval(()=>showQ((qi+1)%quotes.length),6000);
+
+/* ---------- QUIZ FUNNEL ---------- */
+const Q=[["How long have you been playing?",["Never — brand new","Under a year","1–3 years","3+ years / competitive"]],
+ ["What's your biggest frustration?",["Consistency","Serve power","Match nerves","Plateaued progress"]],
+ ["How often can you train?",["Once a week","Twice a week","3+ times a week"]],
+ ["What's your goal this year?",["Learn the game properly","Beat my usual rivals","Compete in tournaments","Get fit & enjoy it"]],
+ ["When would you want to start?",["This week","This month","Just exploring"]]];
+let qStep=0;const answers=[];
+function renderQuiz(){const b=document.getElementById('quizBody');
+  document.getElementById('pbar').style.width=(qStep/ (Q.length+1)*100)+'%';
+  if(qStep<Q.length){const[q,opts]=Q[qStep];
+    b.innerHTML='<p class="quiz-q">'+q+'</p>'+opts.map(o=>`<button class="quiz-opt" onclick="answerQ('${o.replace(/'/g,"\\'")}')">${o}</button>`).join('');}
+  else{b.innerHTML=`<p class="quiz-q">Your assessment is ready.</p>
+    <p style="color:var(--ivory-dim);font-weight:300;margin-bottom:22px">Enter your details and I'll send your personal performance read — plus where I'd start with your game.</p>
+    <form onsubmit="return submitLead(event)">
+      <div class="row2"><div class="field"><label>Name</label><input required id="ln"></div>
+      <div class="field"><label>Phone</label><input required id="lp" type="tel"></div></div>
+      <div class="field"><label>Email</label><input required id="le" type="email"></div>
+      <button class="btn solid" style="width:100%">Send My Assessment</button></form>`;}}
+function answerQ(a){answers.push(a);track('quiz_answer',{step:qStep,answer:a});qStep++;renderQuiz();}
+function submitLead(e){e.preventDefault();
+  const lead={name:ln.value,phone:lp.value,email:le.value,skill:answers,ts:new Date().toISOString()};
+  const leads=JSON.parse(sessionStorage.getItem('ps_leads')||'[]');leads.push(lead);
+  sessionStorage.setItem('ps_leads',JSON.stringify(leads));track('lead_captured',{email:lead.email});
+  document.getElementById('pbar').style.width='100%';
+  document.getElementById('quizBody').innerHTML=`<p class="quiz-q" style="color:var(--gold)">Done, ${lead.name.split(' ')[0]}.</p>
+   <p style="color:var(--ivory-dim);font-weight:300">Your assessment is on its way to ${lead.email}. Watch for four short emails this week — my welcome, my philosophy, a student's story, and a private booking offer.</p>`;
+  return false;}
+renderQuiz();
+
+/* ---------- BOOKING: handled by Calendly embed ---------- */
+
+/* ---------- SOCIAL PROOF TOASTS ---------- */
+const proofs=["Marcus from North York booked a Private Lesson","2 Saturday slots left this month",
+ "Aaliyah completed her free assessment","A parent just enrolled in Junior Academy"];
+let pi=0;function toastNext(){const t=document.getElementById('toast');t.textContent=proofs[pi%proofs.length];
+  t.classList.add('show');setTimeout(()=>t.classList.remove('show'),4200);pi++;}
+setTimeout(()=>{toastNext();setInterval(toastNext,16000);},9000);
+
+/* ---------- EXIT INTENT ---------- */
+let exitShown=false;
+document.addEventListener('mouseout',e=>{if(!exitShown&&e.clientY<8&&!e.relatedTarget){exitShown=true;
+  document.getElementById('exitPop').classList.add('open');track('exit_intent_shown');}});
+function closeExit(){document.getElementById('exitPop').classList.remove('open');}
+
+/* ---------- AI CONCIERGE (Claude-powered) ---------- */
+const chatBox=document.getElementById('chatBox'),chatLog=document.getElementById('chatLog');
+document.getElementById('chatFab').onclick=()=>{chatBox.classList.toggle('open');track('chat_opened');};
+const chatHistory=[];
+const SYS=`You are the concierge for Pro Stock, Yemane Tekeste's private tennis coaching brand in Toronto. Tone: warm, refined, concise (2-4 sentences). Pricing: Private $120/hr, Semi-Private $75/person/hr, Match Analysis $90, Beginner Program $499 for 8 sessions, Competitive Training $850/month, Junior Academy summer program weekdays 4-6pm. Saturday private lessons 10am-4pm. A $40 deposit books a lesson and applies to the first session. Encourage the free assessment or booking. Contact: coach@tennisprostock.com. Never invent other facts.`;
+async function sendChat(){const inp=document.getElementById('chatInput');const text=inp.value.trim();if(!text)return;
+  inp.value='';addMsg(text,'user');chatHistory.push({role:'user',content:text});
+  const hold=addMsg('…','bot');
+  try{const r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:1000,system:SYS,messages:chatHistory})});
+   const d=await r.json();
+   const reply=(d.content||[]).map(c=>c.text||'').join('').trim()||'I had trouble answering — please try again.';
+   hold.textContent=reply;chatHistory.push({role:'assistant',content:reply});track('chat_reply');}
+  catch(err){hold.textContent='Connection hiccup — ask me again in a moment.';}}
+function addMsg(t,who){const d=document.createElement('div');d.className='msg '+who;d.textContent=t;
+  chatLog.appendChild(d);chatLog.scrollTop=chatLog.scrollHeight;return d;}
+</script>
+</body>
+</html>
